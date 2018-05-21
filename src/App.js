@@ -10,7 +10,7 @@ class App extends Component {
               <div className="top">
                 <div className="title"></div>
                 <div className="link"></div>
-                <div className="link1"></div>
+                <div className="link"></div>
                 <div className="link"></div>
               </div>
               <div className="middle">
@@ -19,11 +19,11 @@ class App extends Component {
               </div>
               <div className="bottom">
                   <div className="previous-btn-container">
-                    <div className="icon"></div>
+                      <i className="fas fa-chevron-left"></i>
                   </div>
                   <div className="content-container"></div>
                   <div className="next-btn-container">
-                      <span className="icon"></span>
+                      <i className="fas fa-chevron-right"></i>
                   </div>
               </div>
           </div>
@@ -32,13 +32,15 @@ class App extends Component {
             </div>
             <div className="toolbar">
                 <div className="previous-btn-container">
-                    <div className="icon"></div>
+                    <i className="fas fa-arrow-left fa-2x"></i>
                 </div>
                 <div className="links-container">
-                  <a className="link"></a>
+                  <div className="link">
+                      <i className="fas fa-home fa-2x"></i>
+                  </div>
                 </div>
                 <div className="next-btn-container">
-                    <div className="icon"></div>
+                    <i className="fas fa-arrow-right fa-2x"></i>
                 </div>
             </div>
           </div>
