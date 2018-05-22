@@ -1,0 +1,36 @@
+@import "../../assets/vars";
+
+.container{
+  margin: 0 !important;
+  margin-left: 0.25% !important;
+  padding: 0 !important;
+
+  min-height: 100% !important;
+  height: 100% !important;
+  max-height: 100%!important;
+
+  min-width: 74.75%!important;
+  width: 74.75% !important;
+  max-width: 74.75% !important;
+
+  background: transparent !important;
+
+  .page{
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 90% !important;
+    height: 90% !important;
+    max-height: 90%!important;
+
+    min-width: 100%!important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+
+    background: $primaryOpacityColor !important;
+  }
+}
+

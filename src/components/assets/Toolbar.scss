@@ -1,0 +1,166 @@
+@import "../../assets/vars";
+
+@-webkit-keyframes toolbar-hover {
+  0%{
+    color: $white;
+  }
+  100%{
+    color: $secondaryColor;
+    background-color: $white;
+  }
+}
+@-moz-keyframes hover {
+  0%{
+    color: $white;
+  }
+  100%{
+    color: $secondaryColor;
+    background-color: $white;
+  }
+}
+@-o-keyframes hover {
+  0%{
+    color: $white;
+  }
+  100%{
+    color: $secondaryColor;
+    background-color: $white;
+  }
+}
+@keyframes hover {
+  0%{
+    color: $white;
+  }
+  100%{
+    color: $secondaryColor;
+    background-color: $white;
+  }
+}
+
+.toolbar{
+  margin: 0 !important;
+  margin-top: 0.25% !important;
+  padding: 0 !important;
+
+  min-height: 9.75% !important;
+  height: 9.75% !important;
+  max-height: 9.75%!important;
+
+  min-width: 100%!important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+
+  display: flex;
+  flex-direction: row;
+
+  color: $white !important;
+  background: $primaryOpacityColor !important;
+
+  .previous-btn-container-toolbar {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 100% !important;
+    height: 100% !important;
+    max-height: 100%!important;
+
+    min-width: 10%!important;
+    width: 10% !important;
+    max-width: 10% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 10px !important;
+
+    &:hover {
+      -webkit-animation: toolbar-hover .5s 1;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation:    toolbar-hover .5s 1;
+      -moz-animation-fill-mode: forwards;
+      -o-animation:      toolbar-hover .5s 1;
+      -o-animation-fill-mode: forwards;
+      animation:         toolbar-hover .5s 1;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .links-container {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 100% !important;
+    height: 100% !important;
+    max-height: 100%!important;
+
+    min-width: 80%!important;
+    width: 80% !important;
+    max-width: 80% !important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .link-toolbar {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      min-height: 100% !important;
+      height: 100% !important;
+      max-height: 100%!important;
+
+      min-width: 10%!important;
+      width: 10% !important;
+      max-width: 10% !important;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        -webkit-animation: toolbar-hover .5s 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation:    toolbar-hover .5s 1;
+        -moz-animation-fill-mode: forwards;
+        -o-animation:      toolbar-hover .5s 1;
+        -o-animation-fill-mode: forwards;
+        animation:         toolbar-hover .5s 1;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  .next-btn-container-toolbar {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 100% !important;
+    height: 100% !important;
+    max-height: 100%!important;
+
+    min-width: 10%!important;
+    width: 10% !important;
+    max-width: 10% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-right-radius: 10px !important;
+
+    &:hover {
+      -webkit-animation: toolbar-hover .5s 1;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation:    toolbar-hover .5s 1;
+      -moz-animation-fill-mode: forwards;
+      -o-animation:      toolbar-hover .5s 1;
+      -o-animation-fill-mode: forwards;
+      animation:         toolbar-hover .5s 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
