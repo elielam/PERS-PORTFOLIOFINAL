@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './assets/Container.scss';
 import Toolbar from "./Toolbar";
+import PageHome from "./pages/PageHome";
+import PagePortfolio from "./pages/PagePortfolio";
 
 class Container extends Component {
     render() {
@@ -12,7 +14,8 @@ class Container extends Component {
 
                 {/* ------------------------- PAGE ------------------------- */}
 
-                <div className="page"></div>
+                <PageHome/>
+                {/*<PagePortfolio/>*/}
 
                 {/* ------------------------- TOOLBAR ------------------------- */}
 

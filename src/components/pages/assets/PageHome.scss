@@ -1,0 +1,94 @@
+@import "../../../assets/vars";
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// HEADER
+
+.header {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+
+  min-height: 33.5% !important;
+  height: 33.5% !important;
+  max-height: 33.5% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  background-color: black;
+}
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// THUMBS
+
+.thumbs {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-height: 34% !important;
+  height: 34% !important;
+  max-height: 34% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+
+  .thumb {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+
+    min-width: 33.3333333333333% !important;
+    width: 33.3333333333333% !important;
+    max-width: 33.3333333333333% !important;
+
+    // Todo Deserve Better
+    &:hover {
+      background-color: $grey500O;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// STATS
+
+.stats {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-height: 32.5% !important;
+  height: 32.5% !important;
+  max-height: 32.5% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  .line {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 33.3333333333333% !important;
+    height: 33.3333333333333% !important;
+    max-height: 33.3333333333333% !important;
+
+    min-width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    // Todo Deserve Better
+    &:hover {
+      background-color: $grey500O;
+    }
+  }
+}
+

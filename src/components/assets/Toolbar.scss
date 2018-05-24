@@ -49,14 +49,10 @@
       background-color: $grey500O;
     }
   }
-  .previous {
-    // Todo Border
-    border-bottom-left-radius: 10px !important;
-  }
-  .next {
-    // Todo Border
-    border-bottom-right-radius: 10px !important;
-  }
+  // Todo Border
+  .previous { border-bottom-left-radius: 10px !important; }
+  // Todo Border
+  .next { border-bottom-right-radius: 10px !important; }
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   // LINKS

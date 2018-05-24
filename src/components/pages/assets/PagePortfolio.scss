@@ -1,0 +1,98 @@
+@import "../../../assets/vars";
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// SELECTORS
+
+.selectors {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-height: 10% !important;
+  height: 10% !important;
+  max-height: 10% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  flex-direction: row;
+
+
+  .tag {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+
+    min-width: 25% !important;
+    width: 25% !important;
+    max-width: 25% !important;
+
+    &:hover {
+      background-color: $grey500O;
+    }
+  }
+  .first { border-top-left-radius: 10px !important; }
+  .last { border-top-right-radius: 10px !important; }
+}
+
+.projects {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-height: 90% !important;
+  height: 90% !important;
+  max-height: 90% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    min-height: 33.33333333333333% !important;
+    height: 33.33333333333333% !important;
+    max-height: 33.33333333333333% !important;
+
+    min-width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex;
+    flex-direction: row;
+
+    // Todo Deserve Better
+    &:hover {
+      background-color: $grey100;
+    }
+
+    .col {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      min-height: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+
+      min-width: 25% !important;
+      width: 25% !important;
+      max-width: 25% !important;
+
+      // Todo Deserve Better
+      &:hover {
+        background-color: $grey500O;
+      }
+    }
+  }
+}
+
+
+
