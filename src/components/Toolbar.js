@@ -5,17 +5,17 @@ class Toolbar extends Component {
     render() {
         return (
             <div className="toolbar">
-                <div className="previous-btn-container-toolbar">
-                    <i className="fas fa-arrow-left fa-2x"></i>
+                <a className="direction-btn previous">
+
+                </a>
+                <div className="links">
+                <a className="link">
+                    <i className="fas fa-home fa-2x"/>
+                </a>
                 </div>
-                <div className="links-container">
-                    <div className="link-toolbar">
-                        <i className="fas fa-home fa-2x"></i>
-                    </div>
-                </div>
-                <div className="next-btn-container-toolbar">
-                    <i className="fas fa-arrow-right fa-2x"></i>
-                </div>
+                <a className="direction-btn next">
+
+                </a>
             </div>
         );
     }

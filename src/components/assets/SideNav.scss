@@ -1,5 +1,31 @@
 @import "../../assets/vars";
 
+// Todo Remove
+@keyframes bgcolorchange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgcolorchange {
+  0%   {background: red;}
+  25%  {background: yellow;}
+  75%  {background: green;}
+  100% {background: blue;}
+}
+
 .sidenav {
   margin: 0 !important;
   padding: 0 !important;
@@ -12,8 +38,10 @@
   width: 25% !important;
   max-width: 25% !important;
 
+  // Todo Border
   border-radius: 10px !important;
 
+  // Todo Color
   background: $primaryOpacityColor;
 
   .top {
@@ -31,9 +59,11 @@
     display: flex;
     flex-direction: column;
 
+    // Todo Border
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
 
+    // Todo Color
     background: transparent !important;
 
     .title {
@@ -48,10 +78,27 @@
       width: 100% !important;
       max-width: 100% !important;
 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // Todo Border
       border-top-left-radius: 10px !important;
       border-top-right-radius: 10px !important;
 
-      background: $secondaryColor !important;
+      // Todo Color
+      color: $white !important;
+      // Todo Remove
+      -webkit-animation: bgcolorchange 4s infinite;
+      animation: 4s infinite bgcolorchange;
+
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+        // Todo Font Styles
+        font-size: 36px;
+        font-weight: bold;
+      }
     }
 
     .link {
@@ -66,11 +113,19 @@
       width: 100% !important;
       max-width: 100% !important;
 
-      background: $secondaryColor;
-      border-top: 1px solid $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // Todo Color
+      color: $white;
+      background: transparent;
+      // Todo Border
+      border-top: 1px solid $grey500;
 
       &:hover {
-        background-color: white;
+        // Todo Color
+        background-color: $grey500O;
       }
     }
   }
@@ -89,26 +144,26 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
+    // Todo Color
     background: transparent !important;
 
     .desc {
       margin: 0 !important;
       padding: 0 !important;
 
-      min-height: 45% !important;
-      height: 45% !important;
-      max-height: 45% !important;
+      min-height: 55% !important;
+      height: 55% !important;
+      max-height: 55% !important;
 
-      min-width: 90% !important;
-      width: 90% !important;
-      max-width: 90% !important;
+      min-width: 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
 
-      //TODO remove
-      border: 1px solid white;
-      border-bottom: none;
+      // Todo Remove
+      -webkit-animation: bgcolorchange 4s infinite;
+      animation: 4s infinite bgcolorchange;
     }
 
     .social {
@@ -119,31 +174,107 @@
       height: 45% !important;
       max-height: 45% !important;
 
-      min-width: 90% !important;
-      width: 90% !important;
-      max-width: 90% !important;
+      min-width: 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
 
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
 
-      //TODO remove
-      border: 1px solid white;
-
-      .thumb {
+      .thumbs {
         margin: 0 !important;
-        margin-top: 5% !important;
         padding: 0 !important;
 
-        min-height: 30% !important;
-        height: 30% !important;
-        max-height: 30% !important;
+        min-height: 50% !important;
+        height: 50% !important;
+        max-height: 50% !important;
 
-        min-width: 20% !important;
-        width: 20% !important;
-        max-width: 20% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
 
-        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        // Todo Color
+        background-color: transparent !important;
+
+        .thumb {
+          margin: 0 !important;
+          padding: 0 !important;
+
+          min-height: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+
+          min-width: 20% !important;
+          width: 20% !important;
+          max-width: 20% !important;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // Todo Color
+          color: $white;
+
+          &:hover {
+            // Todo Color
+            background-color: $grey500O;
+          }
+        }
+      }
+
+      .localisation {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-height: 50% !important;
+        height: 50% !important;
+        max-height: 50% !important;
+
+        min-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // Todo Map image
+        background: url("http://fr.ubergizmo.com/wp-content/uploads/2016/03/google-maps-link.jpg") no-repeat center center;
+        background-size: cover;
+
+        .overlay {
+          margin: 0 !important;
+          padding: 0 !important;
+
+          min-height: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+
+          min-width: 100% !important;
+          width: 100% !important;
+          max-width: 100% !important;
+
+          display: none;
+          justify-content: center;
+          align-items: center;
+
+          transition-property: display;
+          transition-duration: 10s;
+          transition-timing-function: ease-in;
+
+          // Todo Color
+          background-color: $grey300O;
+        }
+
+        &:hover .overlay {
+          display: flex !important;
+        }
       }
     }
 
@@ -161,16 +292,18 @@
     width: 100% !important;
     max-width: 100% !important;
 
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
+    // Todo Border
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+
+    // Todo Color
     background: transparent !important;
-    color: white !important;
+    color: $white !important;
 
     .previous-btn-container {
       margin: 0 !important;
@@ -184,14 +317,16 @@
       width: 10% !important;
       max-width: 10% !important;
 
-      border-bottom-left-radius: 10px !important;
-
       display: flex;
       justify-content: center;
       align-items: center;
 
+      // Todo Border
+      border-bottom-left-radius: 10px !important;
+
       &:hover {
-        color: $secondaryColor;
+        // Todo Color
+        color: $grey900;
       }
     }
 
@@ -207,8 +342,9 @@
       width: 80% !important;
       max-width: 80% !important;
 
-      //TODO remove
-      border: 1px solid white;
+      // Todo Remove
+      -webkit-animation: bgcolorchange 4s infinite;
+      animation: 4s infinite bgcolorchange;
     }
 
     .next-btn-container {
@@ -223,15 +359,22 @@
       width: 10% !important;
       max-width: 10% !important;
 
-      border-bottom-right-radius: 10px !important;
-
       display: flex;
       justify-content: center;
       align-items: center;
 
+      // Todo Border
+      border-bottom-right-radius: 10px !important;
+
       &:hover {
-        color: $secondaryColor;
+        // Todo Color
+        color: $grey900;
       }
     }
+  }
+
+  .no-decoration {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 }
