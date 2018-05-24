@@ -21,6 +21,46 @@ const skills2 = [
 ];
 
 class SideNav extends Component {
+    state = {
+        skill : 1,
+    };
+
+    handleBtnSkillPrevious() {
+        let skill = this.state.skill;
+        switch (skill) {
+            case 1:
+                this.setState({
+                    skill : 2
+                });
+                break;
+            case 2:
+                this.setState({
+                    skill : 1
+                });
+                break;
+            default:
+                break;
+        }
+    }
+
+    handleBtnSkillNext() {
+        let skill = this.state.skill;
+        switch (skill) {
+            case 1:
+                this.setState({
+                    skill : 2
+                });
+                break;
+            case 2:
+                this.setState({
+                    skill : 1
+                });
+                break;
+            default:
+                break;
+        }
+    }
+
     render() {
 
         const { page, handleBtn1, handleBtn2, handleBtn3 } = this.props;
@@ -111,22 +151,33 @@ class SideNav extends Component {
 
                     {/* PREVIOUS BTN */}
 
-                    <div className="previous-btn-container">
+                    <div className="previous-btn-container" onClick={this.handleBtnSkillPrevious.bind(this)}>
                         <i className="fas fa-chevron-left"/>
                     </div>
 
                     {/* SKILLS CONTENT */}
 
                     <div className="content-container">
-                        <SkillTab
-                            title={"test"}
-                            skills={skills1}
-                        />
+
+                        {this.state.skill === 1 && (
+                            <SkillTab
+                                title={"test"}
+                                skills={skills1}
+                            />
+                        )}
+
+                        {this.state.skill === 2 && (
+                            <SkillTab
+                                title={"test2"}
+                                skills={skills2}
+                            />
+                        )}
+
                     </div>
 
                     {/* NEXT BTN */}
 
-                    <div className="next-btn-container">
+                    <div className="next-btn-container" onClick={this.handleBtnSkillNext.bind(this)}>
                         <i className="fas fa-chevron-right"/>
                     </div>
 
