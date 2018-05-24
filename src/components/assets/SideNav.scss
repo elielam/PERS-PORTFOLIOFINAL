@@ -3,27 +3,48 @@
 // Todo Remove
 @keyframes bgcolorchange {
   0% {
-    background-color: red;
+    //background-color: red;
+    background-color: $grey300;
   }
   25% {
-    background-color: green;
+    //background-color: green;
+    background-color: $grey300;
   }
   50% {
-    background-color: yellow;
+    //background-color: yellow;
+    background-color: $grey300;
   }
   75% {
-    background-color: yellow;
+    //background-color: yellow;
+    background-color: $grey300;
   }
   100% {
-    background-color: red;
+    //background-color: red;
+    background-color: $grey300;
   }
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes bgcolorchange {
-  0%   {background: red;}
-  25%  {background: yellow;}
-  75%  {background: green;}
-  100% {background: blue;}
+  0% {
+    //background-color: red;
+    background-color: $grey300;
+  }
+  25% {
+    //background-color: green;
+    background-color: $grey300;
+  }
+  50% {
+    //background-color: yellow;
+    background-color: $grey300;
+  }
+  75% {
+    //background-color: yellow;
+    background-color: $grey300;
+  }
+  100% {
+    //background-color: red;
+    background-color: $grey300;
+  }
 }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -269,20 +290,21 @@
           width: 100% !important;
           max-width: 100% !important;
 
-          display: none;
+          display: flex !important;
           justify-content: center;
           align-items: center;
 
-          transition-property: display;
-          transition-duration: 10s;
-          transition-timing-function: ease-in;
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.5s linear;
 
           // Todo Color
           background-color: $grey300O;
         }
 
         &:hover .overlay {
-          display: flex !important;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }
