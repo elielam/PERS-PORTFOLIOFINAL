@@ -183,8 +183,8 @@
       max-width: 100% !important;
 
       // Todo Remove
-      -webkit-animation: bgcolorchange 4s infinite;
-      animation: 4s infinite bgcolorchange;
+      background-color: white;
+      border: 0.1px solid black;
     }
 
     .social {
@@ -367,6 +367,10 @@
       width: 80% !important;
       max-width: 80% !important;
 
+      // Todo Border
+      border: 1px solid white;
+
+      // Todo Color
       background-color: transparent;
     }
 
