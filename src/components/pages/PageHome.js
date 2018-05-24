@@ -15,9 +15,7 @@ class PageHome extends Component {
 
             <div className="page">
 
-                <div className="header">
-
-                </div>
+                <div className="header"/>
 
                 <div className="thumbs">
                     <div className="thumb"/>

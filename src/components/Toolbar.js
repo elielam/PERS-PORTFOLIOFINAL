@@ -3,6 +3,9 @@ import './assets/Toolbar.scss';
 
 class Toolbar extends Component {
     render() {
+
+        const { previousBtnClick, nextBtnClick } = this.props;
+
         return (
 
             /* ------------------------- TOOLBAR ------------------------- */
@@ -11,7 +14,7 @@ class Toolbar extends Component {
 
                 {/* PREVIOUS BTN */}
 
-                <a className="direction-btn previous">
+                <a className="direction-btn previous" onClick={previousBtnClick}>
 
                 </a>
 
@@ -28,7 +31,7 @@ class Toolbar extends Component {
 
                 {/* NEXT BTN */}
 
-                <a className="direction-btn next">
+                <a className="direction-btn next" onClick={nextBtnClick}>
 
                 </a>
 

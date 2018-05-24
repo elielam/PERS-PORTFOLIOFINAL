@@ -3,6 +3,9 @@ import './assets/SideNav.scss';
 
 class SideNav extends Component {
     render() {
+
+        const { page } = this.props;
+
         return (
 
             /* ------------------------- SIDENAV ------------------------- */
@@ -15,7 +18,7 @@ class SideNav extends Component {
 
                     {/* TITLE */}
 
-                    <div className="title"><p>TITLE</p></div>
+                    <div className="title"><p>{page.title}</p></div>
 
                     {/* LINKS */}
 

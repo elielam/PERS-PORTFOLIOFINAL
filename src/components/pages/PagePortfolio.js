@@ -15,9 +15,7 @@ class PagePortfolio extends Component {
             <div className="page">
 
                 <div className="selectors">
-                    <div className="tag first">
-                        PORTFOLIO
-                    </div>
+                    <div className="tag first"/>
                     <div className="tag"/>
                     <div className="tag"/>
                     <div className="tag last"/>
