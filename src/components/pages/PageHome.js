@@ -5,10 +5,6 @@ class PageHome extends Component {
 
     render() {
 
-        function lineHover () {
-            console.log('Line #1 HOVER')
-        }
-
         return (
 
             /* ------------------------- PAGE HOME ------------------------- */
@@ -24,7 +20,7 @@ class PageHome extends Component {
                 </div>
 
                 <div className="stats">
-                    <div className="line" onMouseEnter={lineHover.bind(this)}/>
+                    <div className="line"/>
                     <div className="line"/>
                     <div className="line"/>
                 </div>

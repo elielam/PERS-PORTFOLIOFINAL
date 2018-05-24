@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './assets/PagePortfolio.scss';
 
 class PagePortfolio extends Component {
-    state = {
-        title: 'Portfolio',
-    };
 
     render() {
 

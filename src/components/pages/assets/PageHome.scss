@@ -18,7 +18,9 @@
   width: 100% !important;
   max-width: 100% !important;
 
-  background-color: black;
+  // Todo Remove
+  -webkit-animation: bgcolorchange 4s infinite;
+  animation: 4s infinite bgcolorchange;
 }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------

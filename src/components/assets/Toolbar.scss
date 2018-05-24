@@ -53,6 +53,7 @@
   .previous { border-bottom-left-radius: 10px !important; }
   // Todo Border
   .next { border-bottom-right-radius: 10px !important; }
+  .disabled { pointer-events: none; cursor: default; background-color: $grey500O; };
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   // LINKS

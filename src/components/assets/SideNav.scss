@@ -118,6 +118,7 @@
       }
     }
 
+    .active { background-color: $grey500O !important; }
     .link {
       margin: 0 !important;
       padding: 0 !important;
@@ -136,7 +137,7 @@
 
       // Todo Color
       color: $white;
-      background: transparent;
+      background-color: transparent;
       // Todo Border
       border-top: 1px solid $grey500;
 
@@ -366,9 +367,7 @@
       width: 80% !important;
       max-width: 80% !important;
 
-      // Todo Remove
-      -webkit-animation: bgcolorchange 4s infinite;
-      animation: 4s infinite bgcolorchange;
+      background-color: transparent;
     }
 
     .next-btn-container {

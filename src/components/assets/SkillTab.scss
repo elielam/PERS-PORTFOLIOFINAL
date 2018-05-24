@@ -1,0 +1,24 @@
+@import "../../assets/vars";
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// SKILLTAB
+
+.skilltab {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-height: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  background-color: red !important;
+
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

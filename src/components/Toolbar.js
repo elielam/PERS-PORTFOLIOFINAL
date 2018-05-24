@@ -4,7 +4,7 @@ import './assets/Toolbar.scss';
 class Toolbar extends Component {
     render() {
 
-        const { previousBtnClick, nextBtnClick } = this.props;
+        const { page, previousBtnClick, nextBtnClick, homeBtnClick } = this.props;
 
         return (
 
@@ -14,9 +14,11 @@ class Toolbar extends Component {
 
                 {/* PREVIOUS BTN */}
 
-                <a className="direction-btn previous" onClick={previousBtnClick}>
-
-                </a>
+                {page.id === 1 ? (
+                    <a className="direction-btn previous disabled" onClick={previousBtnClick}/>
+                ):(
+                    <a className="direction-btn previous" onClick={previousBtnClick}/>
+                )}
 
                 {/* ------------------------- LINKS ------------------------- */}
 
@@ -24,16 +26,18 @@ class Toolbar extends Component {
 
                     {/* LINK */}
 
-                    <a className="link">
+                    <a className="link" onClick={homeBtnClick}>
                         <i className="fas fa-home fa-2x"/>
                     </a>
                 </div>
 
                 {/* NEXT BTN */}
 
-                <a className="direction-btn next" onClick={nextBtnClick}>
-
-                </a>
+                {page.id === 4 ? (
+                    <a className="direction-btn next disabled" onClick={nextBtnClick}/>
+                ):(
+                    <a className="direction-btn next" onClick={nextBtnClick}/>
+                )}
 
             </div>
         );

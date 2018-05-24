@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './assets/Container.scss';
+
 import Toolbar from "./Toolbar";
 import PageHome from "./pages/PageHome";
+import PageCourse from "./pages/PageCourse";
 import PagePortfolio from "./pages/PagePortfolio";
 
 class Container extends Component {
 
     render() {
 
-        const { page, previousBtnClick, nextBtnClick } = this.props;
+        const { page, previousBtnClick, nextBtnClick, homeBtnClick } = this.props;
 
         return (
 
@@ -23,7 +25,7 @@ class Container extends Component {
                 }
 
                 {page.id === 2 &&
-                    <PageHome/>
+                    <PageCourse/>
                 }
 
                 {page.id === 3 &&
@@ -37,8 +39,10 @@ class Container extends Component {
                 {/* ------------------------- TOOLBAR ------------------------- */}
 
                 <Toolbar
+                    page={page}
                     previousBtnClick={previousBtnClick}
                     nextBtnClick={nextBtnClick}
+                    homeBtnClick={homeBtnClick}
                 />
 
             </div>

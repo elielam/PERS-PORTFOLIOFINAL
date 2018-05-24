@@ -69,6 +69,30 @@ class App extends Component {
         }
     }
 
+    handleHomeBtn() {
+        this.setState({
+            page: {...PAGEHOME}
+        });
+    }
+
+    handleNavSide1Btn() {
+        this.setState({
+            page: {...PAGECOURSE}
+        });
+    }
+
+    handleNavSide2Btn() {
+        this.setState({
+            page: {...PAGEPORTFOLIO}
+        });
+    }
+
+    handleNavSide3Btn() {
+        this.setState({
+            page: {...PAGETEST}
+        });
+    }
+
   render() {
     return (
 
@@ -84,6 +108,9 @@ class App extends Component {
 
                 <SideNav
                     page={this.state.page}
+                    handleBtn1={this.handleNavSide1Btn.bind(this)}
+                    handleBtn2={this.handleNavSide2Btn.bind(this)}
+                    handleBtn3={this.handleNavSide3Btn.bind(this)}
                 />
 
                 {/* ------------------------- CONTAINER ------------------------- */}
@@ -92,6 +119,7 @@ class App extends Component {
                     page={this.state.page}
                     previousBtnClick={this.handlePreviousBtn.bind(this)}
                     nextBtnClick={this.handleNextBtn.bind(this)}
+                    homeBtnClick={this.handleHomeBtn.bind(this)}
                 />
 
             </div>
