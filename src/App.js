@@ -6,12 +6,26 @@ import Container from "./components/Container";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="panel">
-          <SideNav/>
-          <Container/>
+
+        /* ------------------------- TOOLBAR ------------------------- */
+
+        <div className="App">
+
+            {/* ------------------------- PANEL ------------------------- */}
+
+            <div className="panel">
+
+                {/* ------------------------- SIDENAV ------------------------- */}
+
+                <SideNav/>
+
+                {/* ------------------------- CONTAINER ------------------------- */}
+
+                <Container/>
+
+            </div>
+
         </div>
-      </div>
     );
   }
 }

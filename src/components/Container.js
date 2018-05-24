@@ -5,10 +5,19 @@ import Toolbar from "./Toolbar";
 class Container extends Component {
     render() {
         return (
+
+            /* ------------------------- CONTAINER ------------------------- */
+
             <div className="container">
-                <div className="page">
-                </div>
+
+                {/* ------------------------- PAGE ------------------------- */}
+
+                <div className="page"></div>
+
+                {/* ------------------------- TOOLBAR ------------------------- */}
+
                 <Toolbar/>
+
             </div>
         );
     }
