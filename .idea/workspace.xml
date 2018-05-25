@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38e692e8-f93e-4adc-a44c-367877e4b741" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideNav.js" afterPath="$PROJECT_DIR$/src/components/SideNav.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SkillTab.js" afterPath="$PROJECT_DIR$/src/components/SkillTab.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toolbar.js" afterPath="$PROJECT_DIR$/src/components/Toolbar.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/assets/SideNav.scss" afterPath="$PROJECT_DIR$/src/components/assets/SideNav.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/assets/SkillTab.scss" afterPath="$PROJECT_DIR$/src/components/assets/SkillTab.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/assets/Toolbar.scss" afterPath="$PROJECT_DIR$/src/components/assets/Toolbar.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/PageCourse.js" afterPath="$PROJECT_DIR$/src/components/pages/PageCourse.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/PageHome.js" afterPath="$PROJECT_DIR$/src/components/pages/PageHome.js" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/PagePortfolio.js" afterPath="$PROJECT_DIR$/src/components/pages/PagePortfolio.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/assets/PageHome.scss" afterPath="$PROJECT_DIR$/src/components/pages/assets/PageHome.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/assets/PagePortfolio.scss" afterPath="$PROJECT_DIR$/src/components/pages/assets/PagePortfolio.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -102,11 +92,21 @@
       <file leaf-file-name="PagePortfolio.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/pages/PagePortfolio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectTab.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ProjectTab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/components/pages/assets/PageHome.scss" />
         <option value="$PROJECT_DIR$/src/assets/App.scss" />
         <option value="$PROJECT_DIR$/src/components/pages/assets/PagePortfolio.scss" />
+        <option value="$PROJECT_DIR$/src/components/ProjectTab.js" />
         <option value="$PROJECT_DIR$/src/components/pages/PagePortfolio.js" />
       </list>
     </option>
@@ -253,20 +254,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PERS-PORTFOLIOFINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PERS-PORTFOLIOFINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PERS-PORTFOLIOFINAL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PERS-PORTFOLIOFINAL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -283,17 +270,17 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\assets" />
-      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components" />
-      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\pages\assets" />
-      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\pages" />
-      <recent name="C:\c03735\workarea\labo\Autres\PERS-PORTFOLIOFINAL\src\components\pages\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\c03735\workarea\labo\Autres\PERS-PORTFOLIOFINAL\src\components\pages" />
       <recent name="C:\c03735\workarea\labo\Autres\PERS-PORTFOLIOFINAL\src\components" />
       <recent name="C:\c03735\workarea\labo\Autres\PERS-PORTFOLIOFINAL\src\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\c03735\workarea\labo\Autres\PERS-PORTFOLIOFINAL\src\components" />
+      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\assets" />
+      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components" />
+      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\pages\assets" />
+      <recent name="C:\Users\Elie\Documents\Projets\Web\PERS-PORTFOLIOFINAL\src\components\pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,12 +330,12 @@
       <workItem from="1527170254589" duration="4816000" />
       <workItem from="1527185158194" duration="9305000" />
       <workItem from="1527200486579" duration="2464000" />
-      <workItem from="1527236276053" duration="12872000" />
+      <workItem from="1527236276053" duration="14509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50722000" />
+    <option name="totallyTimeSpent" value="52359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,9 +357,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5088853" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -415,13 +402,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/assets/SideNav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="109" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Toolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -751,10 +731,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/PagePortfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
