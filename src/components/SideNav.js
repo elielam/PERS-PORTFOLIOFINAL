@@ -3,21 +3,19 @@ import './assets/SideNav.scss';
 import SkillTab from "./SkillTab";
 
 const skills1 = [
-    {id: 1, title: 'Java'},
-    {id: 2, title: 'C++'},
-    {id: 3, title: 'C+'},
-    {id: 4, title: 'C#'},
-    {id: 5, title: 'Web'},
-    {id: 6, title: 'Android'},
+    {id: 1, title: 'Java', lvl: '3'},
+    {id: 2, title: 'Android', lvl: '5'},
+    {id: 3, title: 'C+', lvl: '2'},
+    {id: 4, title: 'C#', lvl: '1'},
+    {id: 5, title: 'Web', lvl: '3'},
 ];
 
 const skills2 = [
-    {id: 1, title: 'Photoshop'},
-    {id: 2, title: 'Illustrator'},
-    {id: 3, title: 'InDesign'},
-    {id: 4, title: 'SolidWorks'},
-    {id: 5, title: 'AutoCAD'},
-    {id: 6, title: 'UI Design'},
+    {id: 1, title: 'Photoshop', lvl: '4'},
+    {id: 2, title: 'Illustrator', lvl: '1'},
+    {id: 3, title: 'InDesign', lvl: '3'},
+    {id: 4, title: 'UX Design', lvl: '5'},
+    {id: 5, title: 'UI Design', lvl: '2'},
 ];
 
 class SideNav extends Component {
@@ -84,19 +82,25 @@ class SideNav extends Component {
                     {page.id === 2 ? (
                         <div className="link active" onClick={handleBtn1}/>
                     ) : (
-                        <div className="link" onClick={handleBtn1}/>
+                        <div className="link" onClick={handleBtn1}>
+                            <p>COURSE</p>
+                        </div>
                     )}
 
                     {page.id === 3 ? (
                         <div className="link active" onClick={handleBtn2}/>
                     ) : (
-                        <div className="link" onClick={handleBtn2}/>
+                        <div className="link" onClick={handleBtn2}>
+                            <p>PORTFOLIO</p>
+                        </div>
                     )}
 
                     {page.id === 4 ? (
                         <div className="link active" onClick={handleBtn3}/>
                     ) : (
-                        <div className="link" onClick={handleBtn3}/>
+                        <div className="link" onClick={handleBtn3}>
+                            <p>TEST</p>
+                        </div>
                     )}
                 </div>
 
@@ -137,7 +141,7 @@ class SideNav extends Component {
 
                         <div className="localisation">
                             <div className="overlay">
-                                <a className="no-decoration"><i className="fas fa-search fa-2x"/></a>
+                                <a className="no-decoration"><i className="fas fa-search-plus fa-2x"/></a>
                             </div>
                         </div>
 
@@ -161,14 +165,14 @@ class SideNav extends Component {
 
                         {this.state.skill === 1 && (
                             <SkillTab
-                                title={"test"}
+                                title={"1"}
                                 skills={skills1}
                             />
                         )}
 
                         {this.state.skill === 2 && (
                             <SkillTab
-                                title={"test2"}
+                                title={"2"}
                                 skills={skills2}
                             />
                         )}

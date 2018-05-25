@@ -31,8 +31,22 @@
     width: 25% !important;
     max-width: 25% !important;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &:hover {
       background-color: $grey500O;
+    }
+
+    p {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      // Todo Font Style
+      color: $white;
+      font-size: 100%;
+      font-weight: bold;
     }
   }
   .first { border-top-left-radius: 10px !important; }
@@ -69,11 +83,6 @@
     display: flex;
     flex-direction: row;
 
-    // Todo Deserve Better
-    &:hover {
-      background-color: $grey100;
-    }
-
     .col {
       margin: 0 !important;
       padding: 0 !important;
@@ -86,8 +95,55 @@
       width: 25% !important;
       max-width: 25% !important;
 
-      // Todo Deserve Better
-      &:hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      &:hover .overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .test1 { background-color: yellow; }
+      .test2 { background-color: blue; }
+      .test3 { background-color: green; }
+      img {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-height: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+
+        min-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        background-color: red;
+      }
+
+      .overlay {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-height: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+
+        min-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+
         background-color: $grey500O;
       }
     }

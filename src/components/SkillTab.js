@@ -11,10 +11,22 @@ class SkillTab extends Component {
             /* ------------------------- SKILLTAB ------------------------- */
 
             <div className="skilltab">
-                <p>{title}</p><br/>
-                {skills.map((skill) =>
-                    <p>{skill.title}</p>
-                )}
+
+                <div className="title">
+                    <p>{title}</p>
+                </div>
+
+                <div className="skills">
+
+                    {skills.map((skill) =>
+                        <div className="skill">
+                            {/*<p>{skill.title}</p>*/}
+                            {/*<span>{skill.lvl}</span>*/}
+                        </div>
+                    )}
+
+                </div>
+
             </div>
         );
     }

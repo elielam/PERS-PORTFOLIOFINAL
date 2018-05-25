@@ -7,10 +7,9 @@ class PageCourse extends Component {
 
         return (
 
-            /* ------------------------- PAGE PORTFOLIO ------------------------- */
+            /* ------------------------- PAGE COURSE ------------------------- */
 
             <div className="page">
-                <p>COURSE</p>
             </div>
         );
     }

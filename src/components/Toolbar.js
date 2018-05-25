@@ -15,9 +15,12 @@ class Toolbar extends Component {
                 {/* PREVIOUS BTN */}
 
                 {page.id === 1 ? (
-                    <a className="direction-btn previous disabled" onClick={previousBtnClick}/>
+                    <a className="direction-btn previous disabled" onClick={previousBtnClick}>
+                    </a>
                 ):(
-                    <a className="direction-btn previous" onClick={previousBtnClick}/>
+                    <a className="direction-btn previous" onClick={previousBtnClick}>
+                        <i className="fas fa-chevron-left fa-2x"/>
+                    </a>
                 )}
 
                 {/* ------------------------- LINKS ------------------------- */}
@@ -34,9 +37,12 @@ class Toolbar extends Component {
                 {/* NEXT BTN */}
 
                 {page.id === 4 ? (
-                    <a className="direction-btn next disabled" onClick={nextBtnClick}/>
+                    <a className="direction-btn next disabled" onClick={nextBtnClick}>
+                    </a>
                 ):(
-                    <a className="direction-btn next" onClick={nextBtnClick}/>
+                    <a className="direction-btn next" onClick={nextBtnClick}>
+                        <i className="fas fa-chevron-right fa-2x"/>
+                    </a>
                 )}
 
             </div>
