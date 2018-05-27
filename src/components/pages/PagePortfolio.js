@@ -7,28 +7,20 @@ class PagePortfolio extends Component {
         projects: 1,
     };
 
-    handleWebProjectBtn() {
-        this.setState({
-            projects: 1
-        })
+    handleProjectBtnPrevious() {
+        if (this.state.projects !== 1) {
+            this.setState({
+                projects: this.state.projects - 1
+            })
+        }
     }
 
-    handleJavaProjectBtn() {
-        this.setState({
-            projects: 2
-        })
-    }
-
-    handleCProjectsBtn() {
-        this.setState({
-            projects: 3
-        })
-    }
-
-    handleDesignBtn() {
-        this.setState({
-            projects: 4
-        })
+    handleProjectBtnNext() {
+        if (this.state.projects !== 4) {
+            this.setState({
+                projects: this.state.projects + 1
+            })
+        }
     }
 
     render() {
@@ -42,18 +34,46 @@ class PagePortfolio extends Component {
                 {/* SELECTORS */}
 
                 <div className="selectors">
-                    <div className="tag first" onClick={this.handleWebProjectBtn.bind(this)}>
-                        <p>CLIENT</p>
+                    {this.state.projects === 1 ? (
+                        <div className="previous disabled">
+                            <i className="fas fa-times"/>
+                        </div>
+                    ) : (
+                        <div className="previous" onClick={this.handleProjectBtnPrevious.bind(this)}>
+                            <i className="fas fa-chevron-left"/>
+                        </div>
+                    )}
+                    <div className="thumbnail">
+                        {this.state.projects === 1 ? (
+                            <i className="fas fa-circle"/>
+                        ) : (
+                            <i className="far fa-circle"/>
+                        )}
+                        {this.state.projects === 2 ? (
+                            <i className="fas fa-circle"/>
+                        ) : (
+                            <i className="far fa-circle"/>
+                        )}
+                        {this.state.projects === 3 ? (
+                            <i className="fas fa-circle"/>
+                        ) : (
+                            <i className="far fa-circle"/>
+                        )}
+                        {this.state.projects === 4 ? (
+                            <i className="fas fa-circle"/>
+                        ) : (
+                            <i className="far fa-circle"/>
+                        )}
                     </div>
-                    <div className="tag" onClick={this.handleJavaProjectBtn.bind(this)}>
-                        <p>JAVA</p>
-                    </div>
-                    <div className="tag" onClick={this.handleCProjectsBtn.bind(this)}>
-                        <p>C</p>
-                    </div>
-                    <div className="tag last" onClick={this.handleDesignBtn.bind(this)}>
-                        <p>DESIGN</p>
-                    </div>
+                    {this.state.projects === 4 ? (
+                        <div className="next disabled">
+                            <i className="fas fa-times"/>
+                        </div>
+                    ) : (
+                        <div className="next" onClick={this.handleProjectBtnNext.bind(this)}>
+                            <i className="fas fa-chevron-right"/>
+                        </div>
+                    )}
                 </div>
 
                 {/* PROJECTS */}

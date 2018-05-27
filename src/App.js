@@ -6,7 +6,6 @@ import Container from "./components/Container";
 const PAGEHOME = { id: 1, title: "HOME"};
 const PAGECOURSE = { id: 2, title: "COURSE"};
 const PAGEPORTFOLIO = { id: 3, title: "PORTFOLIO"};
-const PAGETEST = { id: 4, title: "TEST"};
 
 class App extends Component {
     state = {
@@ -27,11 +26,6 @@ class App extends Component {
             case 3:
                 this.setState({
                     page: {...PAGECOURSE}
-                });
-                break;
-            case 4:
-                this.setState({
-                    page: {...PAGEPORTFOLIO}
                 });
                 break;
             default:
@@ -55,11 +49,6 @@ class App extends Component {
                 });
                 break;
             case 3:
-                this.setState({
-                    page: {...PAGETEST}
-                });
-                break;
-            case 4:
                 alert('finish');
                 break;
             default:
@@ -77,19 +66,19 @@ class App extends Component {
 
     handleNavSide1Btn() {
         this.setState({
-            page: {...PAGECOURSE}
+            page: {...PAGEHOME}
         });
     }
 
     handleNavSide2Btn() {
         this.setState({
-            page: {...PAGEPORTFOLIO}
+            page: {...PAGECOURSE}
         });
     }
 
     handleNavSide3Btn() {
         this.setState({
-            page: {...PAGETEST}
+            page: {...PAGEPORTFOLIO}
         });
     }
 

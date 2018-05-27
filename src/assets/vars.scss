@@ -41,3 +41,78 @@ $primaryOpacityColor: rgba(33, 33, 33, 0.6);
 
 $secondaryColor: $purple900;
 $secondaryOpacityColor: rgba(74, 20, 140, 0.6);
+
+@font-face {
+  font-family: "primaryFont-black";
+  src: url("/fonts/Roboto/Roboto-Black.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-black-italic";
+  src: url("/fonts/Roboto/Roboto-BlackItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-bold";
+  src: url("/fonts/OpenSans/OpenSans-Bold.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-bold-condensed";
+  src: url("/fonts/Roboto/Roboto-BoldCondensed.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-bold-condensed-italic";
+  src: url("/fonts/Roboto/Roboto-BoldCondensedItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-bold-italic";
+  src: url("/fonts/Roboto/Roboto-BoldItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-condensed";
+  src: url("/fonts/Roboto/Roboto-Condensed.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-condensed-italic";
+  src: url("/fonts/Roboto/Roboto-CondensedItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-italic";
+  src: url("/fonts/Roboto/Roboto-Italic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-light";
+  src: url("/fonts/Roboto/Roboto-Light.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-light-italic";
+  src: url("/fonts/Roboto/Roboto-LightItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-medium";
+  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-medium-italic";
+  src: url("/fonts/Roboto/Roboto-MediumItalic.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-thin";
+  src: url("/fonts/Roboto/Roboto-Thin.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "primaryFont-thin-italic";
+  src: url("/fonts/Roboto/Roboto-ThinItalic.ttf") format("ttf")
+}

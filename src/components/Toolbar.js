@@ -16,6 +16,7 @@ class Toolbar extends Component {
 
                 {page.id === 1 ? (
                     <a className="direction-btn previous disabled" onClick={previousBtnClick}>
+                        <i className="fas fa-times fa-2x"/>
                     </a>
                 ):(
                     <a className="direction-btn previous" onClick={previousBtnClick}>
@@ -36,8 +37,9 @@ class Toolbar extends Component {
 
                 {/* NEXT BTN */}
 
-                {page.id === 4 ? (
+                {page.id === 3 ? (
                     <a className="direction-btn next disabled" onClick={nextBtnClick}>
+                        <i className="fas fa-times fa-2x"/>
                     </a>
                 ):(
                     <a className="direction-btn next" onClick={nextBtnClick}>

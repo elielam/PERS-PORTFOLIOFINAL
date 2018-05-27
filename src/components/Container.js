@@ -32,10 +32,6 @@ class Container extends Component {
                     <PagePortfolio/>
                 }
 
-                {page.id === 4 &&
-                    <PageHome/>
-                }
-
                 {/* ------------------------- TOOLBAR ------------------------- */}
 
                 <Toolbar

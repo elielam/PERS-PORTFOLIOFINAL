@@ -7,9 +7,9 @@
   margin: 0 !important;
   padding: 0 !important;
 
-  min-height: 10% !important;
-  height: 10% !important;
-  max-height: 10% !important;
+  min-height: 5% !important;
+  height: 5% !important;
+  max-height: 5% !important;
 
   min-width: 100% !important;
   width: 100% !important;
@@ -18,48 +18,81 @@
   display: flex !important;
   flex-direction: row;
 
+  // Todo Border
+  border-bottom: 0.1px solid white;
 
-  .tag {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    min-height: 100% !important;
-    height: 100% !important;
-    max-height: 100% !important;
-
-    min-width: 25% !important;
-    width: 25% !important;
-    max-width: 25% !important;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      background-color: $grey500O;
-    }
-
-    p {
+    .previous {
       margin: 0 !important;
       padding: 0 !important;
 
-      // Todo Font Style
-      color: $white;
-      font-size: 100%;
-      font-weight: bold;
+      min-height: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+
+      min-width: 33.333333333333% !important;
+      width: 33.333333333333% !important;
+      max-width: 33.333333333333% !important;
+
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        // Todo Color
+        background: $grey500O;
+      }
     }
-  }
-  .first { border-top-left-radius: 10px !important; }
-  .last { border-top-right-radius: 10px !important; }
+    .thumbnail {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      min-height: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+
+      min-width: 33.333333333333% !important;
+      width: 33.333333333333% !important;
+      max-width: 33.333333333333% !important;
+
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        margin-right: 2%;
+      }
+    }
+    .next {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      min-height: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+
+      min-width: 33.333333333333% !important;
+      width: 33.333333333333% !important;
+      max-width: 33.333333333333% !important;
+
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        // Todo Color
+        background: $grey500O;
+      }
+    }
+    .disabled { pointer-events: none; cursor: default;};
 }
 
 .projects {
   margin: 0 !important;
   padding: 0 !important;
 
-  min-height: 90% !important;
-  height: 90% !important;
-  max-height: 90% !important;
+  min-height: 95% !important;
+  height: 95% !important;
+  max-height: 95% !important;
 
   min-width: 100% !important;
   width: 100% !important;
@@ -106,9 +139,6 @@
         opacity: 1;
       }
 
-      .test1 { background-color: yellow; }
-      .test2 { background-color: blue; }
-      .test3 { background-color: green; }
       img {
         margin: 0 !important;
         padding: 0 !important;
@@ -120,8 +150,6 @@
         min-width: 100% !important;
         width: 100% !important;
         max-width: 100% !important;
-
-        background-color: red;
       }
 
       .overlay {

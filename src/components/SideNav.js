@@ -79,27 +79,27 @@ class SideNav extends Component {
 
                     {/* LINKS */}
 
-                    {page.id === 2 ? (
+                    {page.id === 1 ? (
                         <div className="link active" onClick={handleBtn1}/>
                     ) : (
                         <div className="link" onClick={handleBtn1}>
-                            <p>COURSE</p>
+                            <p></p>
+                        </div>
+                    )}
+
+                    {page.id === 2 ? (
+                        <div className="link active" onClick={handleBtn2}/>
+                    ) : (
+                        <div className="link" onClick={handleBtn2}>
+                            <p></p>
                         </div>
                     )}
 
                     {page.id === 3 ? (
-                        <div className="link active" onClick={handleBtn2}/>
-                    ) : (
-                        <div className="link" onClick={handleBtn2}>
-                            <p>PORTFOLIO</p>
-                        </div>
-                    )}
-
-                    {page.id === 4 ? (
                         <div className="link active" onClick={handleBtn3}/>
                     ) : (
                         <div className="link" onClick={handleBtn3}>
-                            <p>TEST</p>
+                            <p></p>
                         </div>
                     )}
                 </div>
@@ -165,14 +165,14 @@ class SideNav extends Component {
 
                         {this.state.skill === 1 && (
                             <SkillTab
-                                title={"1"}
+                                title={""}
                                 skills={skills1}
                             />
                         )}
 
                         {this.state.skill === 2 && (
                             <SkillTab
-                                title={"2"}
+                                title={""}
                                 skills={skills2}
                             />
                         )}

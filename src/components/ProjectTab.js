@@ -35,15 +35,15 @@ class ProjectTab extends Component {
                             <div className="overlay"/>
                         </div>
                         <div className="col">
-                            <img src="" alt="" className="test1"/>
+                            <img src="" alt=""/>
                             <div className="overlay"/>
                         </div>
                         <div className="col">
-                            <img src="" alt="" className="test2"/>
+                            <img src="" alt=""/>
                             <div className="overlay"/>
                         </div>
                         <div className="col">
-                            <img src="" alt="" className="test3"/>
+                            <img src="" alt=""/>
                             <div className="overlay"/>
                         </div>
                     </div>
