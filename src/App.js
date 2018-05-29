@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './assets/App.scss';
 import SideNav from "./components/SideNav";
 import Container from "./components/Container";
+import MapModal from "./components/MapModal";
+import ProjectModal from "./components/ProjectModal";
 
 const PAGEHOME = { id: 1, title: "HOME"};
 const PAGECOURSE = { id: 2, title: "COURSE"};
@@ -10,6 +12,8 @@ const PAGEPORTFOLIO = { id: 3, title: "PORTFOLIO"};
 class App extends Component {
     state = {
         page : PAGEHOME,
+        openMapModal: false,
+        openProjectModal: false
     };
 
     handlePreviousBtn() {
@@ -82,6 +86,22 @@ class App extends Component {
         });
     }
 
+    handleMapModalOpen = () => {
+        this.setState({ openMapModal: true });
+    };
+
+    handleMapModalClose = () => {
+        this.setState({ openMapModal: false });
+    };
+
+    handleProjectModalOpen = () => {
+        this.setState({ openProjectModal: true });
+    };
+
+    handleProjectModalClose = () => {
+        this.setState({ openProjectModal: false });
+    };
+
   render() {
     return (
 
@@ -100,6 +120,7 @@ class App extends Component {
                     handleBtn1={this.handleNavSide1Btn.bind(this)}
                     handleBtn2={this.handleNavSide2Btn.bind(this)}
                     handleBtn3={this.handleNavSide3Btn.bind(this)}
+                    handleBtnMapModalOpen={this.handleMapModalOpen.bind(this)}
                 />
 
                 {/* ------------------------- CONTAINER ------------------------- */}
@@ -109,6 +130,17 @@ class App extends Component {
                     previousBtnClick={this.handlePreviousBtn.bind(this)}
                     nextBtnClick={this.handleNextBtn.bind(this)}
                     homeBtnClick={this.handleHomeBtn.bind(this)}
+                    handleBtnProjectModalOpen={this.handleProjectModalOpen.bind(this)}
+                />
+
+                <MapModal
+                    open={this.state.openMapModal}
+                    handleBtnMapModalClose={this.handleMapModalClose.bind(this)}
+                />
+
+                <ProjectModal
+                    open={this.state.openProjectModal}
+                    handleBtnProjectModalClose={this.handleProjectModalClose.bind(this)}
                 />
 
             </div>

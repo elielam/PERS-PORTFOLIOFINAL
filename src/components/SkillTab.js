@@ -19,7 +19,7 @@ class SkillTab extends Component {
                 <div className="skills">
 
                     {skills.map((skill) =>
-                        <div className="skill">
+                        <div key={skill.id} className="skill">
                             {/*<p>{skill.title}</p>*/}
                             {/*<span>{skill.lvl}</span>*/}
                         </div>

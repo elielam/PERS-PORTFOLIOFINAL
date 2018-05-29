@@ -25,6 +25,8 @@ class PagePortfolio extends Component {
 
     render() {
 
+        const { handleBtnProjectModalOpen } = this.props;
+
         return (
 
             /* ------------------------- PAGE PORTFOLIO ------------------------- */
@@ -81,24 +83,28 @@ class PagePortfolio extends Component {
                 {this.state.projects === 1 && (
                     <ProjectTab
                         project={4}
+                        handleBtnProjectModalOpen={handleBtnProjectModalOpen}
                     />
                 )}
 
                 {this.state.projects === 2 && (
                     <ProjectTab
                         project={8}
+                        handleBtnProjectModalOpen={handleBtnProjectModalOpen}
                     />
                 )}
 
                 {this.state.projects === 3 && (
                     <ProjectTab
                         project={12}
+                        handleBtnProjectModalOpen={handleBtnProjectModalOpen}
                     />
                 )}
 
                 {this.state.projects === 4 && (
                     <ProjectTab
                         project={4}
+                        handleBtnProjectModalOpen={handleBtnProjectModalOpen}
                     />
                 )}
 

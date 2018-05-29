@@ -61,7 +61,7 @@ class SideNav extends Component {
 
     render() {
 
-        const { page, handleBtn1, handleBtn2, handleBtn3 } = this.props;
+        const { page, handleBtn1, handleBtn2, handleBtn3, handleBtnMapModalOpen } = this.props;
 
         return (
 
@@ -140,7 +140,7 @@ class SideNav extends Component {
                         {/* MAP */}
 
                         <div className="localisation">
-                            <div className="overlay">
+                            <div className="overlay" onClick={handleBtnMapModalOpen}>
                                 <a className="no-decoration"><i className="fas fa-search-plus fa-2x"/></a>
                             </div>
                         </div>

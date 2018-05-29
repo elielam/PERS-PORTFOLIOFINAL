@@ -10,7 +10,7 @@ class Container extends Component {
 
     render() {
 
-        const { page, previousBtnClick, nextBtnClick, homeBtnClick } = this.props;
+        const { page, previousBtnClick, nextBtnClick, homeBtnClick, handleBtnProjectModalOpen } = this.props;
 
         return (
 
@@ -29,7 +29,9 @@ class Container extends Component {
                 }
 
                 {page.id === 3 &&
-                    <PagePortfolio/>
+                    <PagePortfolio
+                        handleBtnProjectModalOpen={handleBtnProjectModalOpen}
+                    />
                 }
 
                 {/* ------------------------- TOOLBAR ------------------------- */}
