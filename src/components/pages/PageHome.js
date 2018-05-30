@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './assets/PageHome.scss';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class PageHome extends Component {
 
@@ -35,21 +36,46 @@ class PageHome extends Component {
                 </div>
 
                 <div className="stats">
-                    <div className="line">
-                        <div className="progress-bar first">
-                            <p>80%</p>
-                        </div>
-                    </div>
-                    <div className="line">
-                        <div className="progress-bar second">
-                            <p>60%</p>
-                        </div>
-                    </div>
-                    <div className="line">
-                        <div className="progress-bar third">
-                            <p>40%</p>
-                        </div>
-                    </div>
+                    <ReactCSSTransitionGroup
+                        transitionName="example"
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={300}>
+
+                        {
+                            <div className="line">
+                                <div className="progress-bar first">
+                                    <p>80%</p>
+                                </div>
+                            </div>
+                        }
+                    </ReactCSSTransitionGroup>
+                    <ReactCSSTransitionGroup
+                        transitionName="example"
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={300}>
+
+                        {
+                            <div className="line">
+                                <div className="progress-bar second">
+                                    <p>60%</p>
+                                </div>
+                            </div>
+                        }
+                    </ReactCSSTransitionGroup>
+                    <ReactCSSTransitionGroup
+                        transitionName="example"
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={300}>
+
+                        {
+                            <div className="line">
+                                <div className="progress-bar third">
+                                    <p>40%</p>
+                                </div>
+                            </div>
+                        }
+                    </ReactCSSTransitionGroup>
+
                 </div>
 
             </div>

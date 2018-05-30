@@ -4,6 +4,7 @@ import SideNav from "./components/SideNav";
 import Container from "./components/Container";
 import MapModal from "./components/MapModal";
 import ProjectModal from "./components/ProjectModal";
+import ContactModal from "./components/ContactModal";
 
 const PAGEHOME = { id: 1, title: "HOME"};
 const PAGECOURSE = { id: 2, title: "COURSE"};
@@ -12,8 +13,9 @@ const PAGEPORTFOLIO = { id: 3, title: "PORTFOLIO"};
 class App extends Component {
     state = {
         page : PAGEHOME,
-        openMapModal: false,
-        openProjectModal: false
+        openMapModal: true,
+        openProjectModal: false,
+        openContactModal: false
     };
 
     handlePreviousBtn() {
@@ -102,6 +104,14 @@ class App extends Component {
         this.setState({ openProjectModal: false });
     };
 
+    handleContactModalOpen = () => {
+        this.setState({ openContactModal: true });
+    };
+
+    handleContactModalClose = () => {
+        this.setState({ openContactModal: false });
+    };
+
   render() {
     return (
 
@@ -121,6 +131,7 @@ class App extends Component {
                     handleBtn2={this.handleNavSide2Btn.bind(this)}
                     handleBtn3={this.handleNavSide3Btn.bind(this)}
                     handleBtnMapModalOpen={this.handleMapModalOpen.bind(this)}
+                    handleBtnContactModalOpen={this.handleContactModalOpen.bind(this)}
                 />
 
                 {/* ------------------------- CONTAINER ------------------------- */}
@@ -131,6 +142,11 @@ class App extends Component {
                     nextBtnClick={this.handleNextBtn.bind(this)}
                     homeBtnClick={this.handleHomeBtn.bind(this)}
                     handleBtnProjectModalOpen={this.handleProjectModalOpen.bind(this)}
+                />
+
+                <ContactModal
+                    open={this.state.openContactModal}
+                    handleBtnContactModalClose={this.handleContactModalClose.bind(this)}
                 />
 
                 <MapModal

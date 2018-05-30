@@ -61,7 +61,7 @@ class SideNav extends Component {
 
     render() {
 
-        const { page, handleBtn1, handleBtn2, handleBtn3, handleBtnMapModalOpen } = this.props;
+        const { page, handleBtn1, handleBtn2, handleBtn3, handleBtnContactModalOpen, handleBtnMapModalOpen } = this.props;
 
         return (
 
@@ -132,8 +132,8 @@ class SideNav extends Component {
                             <div className="thumb">
                                 <a className="no-decoration"><i className="fab fa-whatsapp-square fa-2x"/></a>
                             </div>
-                            <div className="thumb">
-                                <a className="no-decoration"><i className="fas fa-envelope-square fa-2x"/></a>
+                            <div className="thumb" onClick={handleBtnContactModalOpen}>
+                                <a className="no-decoration"><i className="fas fa-envelope-square fa-2x" onClick={handleBtnContactModalOpen}/></a>
                             </div>
                         </div>
 
@@ -165,14 +165,14 @@ class SideNav extends Component {
 
                         {this.state.skill === 1 && (
                             <SkillTab
-                                title={""}
+                                title={"1"}
                                 skills={skills1}
                             />
                         )}
 
                         {this.state.skill === 2 && (
                             <SkillTab
-                                title={""}
+                                title={"2"}
                                 skills={skills2}
                             />
                         )}

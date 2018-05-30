@@ -48,7 +48,7 @@ class ProjectModal extends React.Component {
                 {open === true &&
                 <div
                     className={ classes.modal }
-                    onClose={this.handleClose}
+                    onClose={handleBtnProjectModalClose}
                 >
                     <div className={classes.closeBtn} onClick={handleBtnProjectModalClose}>
                         <i className="fas fa-times fa-2x"/>
