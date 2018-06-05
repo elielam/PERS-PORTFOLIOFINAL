@@ -10,11 +10,11 @@ class SkillTab extends Component {
             let lvlThumb= [];
             let i = 0;
             for (let j = 0; j < skill.lvl ; j++) {
-                lvlThumb.push(<i className="fas fa-circle" style={{marginRight: '2%'}}/>);
+                lvlThumb.push(<i key={skill.id+j} className="fas fa-circle" style={{marginRight: '2%'}}/>);
                 i++
             }
             for (let k = i; k < 7; k++) {
-                lvlThumb.push(<i className="far fa-circle" style={{marginRight: '2%'}}/>);
+                lvlThumb.push(<i key={skill.id+k} className="far fa-circle" style={{marginRight: '2%'}}/>);
             }
             return lvlThumb;
         }

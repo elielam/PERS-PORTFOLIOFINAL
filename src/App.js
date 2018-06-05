@@ -14,7 +14,7 @@ class App extends Component {
     state = {
         page : PAGEHOME,
         openMapModal: false,
-        openProjectModal: true,
+        openProjectModal: false,
         openContactModal: false
     };
 
