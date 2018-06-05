@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import TextField from "@material-ui/core/es/TextField/TextField";
-import Button from "@material-ui/core/es/Button/Button";
+import {TextField, Button} from "@material-ui/core";
 
 const styles = {
     modal: {
