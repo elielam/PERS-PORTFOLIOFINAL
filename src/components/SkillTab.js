@@ -4,7 +4,20 @@ import './assets/SkillTab.scss';
 class SkillTab extends Component {
     render() {
 
-        const { title, skills } = this.props;
+        const { skills } = this.props;
+        
+        function returnLevel(skill) {
+            let lvlThumb= [];
+            let i = 0;
+            for (let j = 0; j < skill.lvl ; j++) {
+                lvlThumb.push(<i className="fas fa-circle" style={{marginRight: '2%'}}/>);
+                i++
+            }
+            for (let k = i; k < 7; k++) {
+                lvlThumb.push(<i className="far fa-circle" style={{marginRight: '2%'}}/>);
+            }
+            return lvlThumb;
+        }
 
         return (
 
@@ -12,16 +25,16 @@ class SkillTab extends Component {
 
             <div className="skilltab">
 
-                <div className="title">
-                    <p>{title}</p>
-                </div>
-
                 <div className="skills">
 
                     {skills.map((skill) =>
                         <div key={skill.id} className="skill">
-                            {/*<p>{skill.title}</p>*/}
-                            {/*<span>{skill.lvl}</span>*/}
+                            <div className="libelle">
+                                <p>{skill.title}</p>
+                            </div>
+                            <div className="level">
+                                {returnLevel(skill)}
+                            </div>
                         </div>
                     )}
 

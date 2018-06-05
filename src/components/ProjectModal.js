@@ -22,7 +22,8 @@ const styles = {
         borderShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        flexDirection: 'column'
 
     },
     closeBtn: {
@@ -32,9 +33,28 @@ const styles = {
         right: "2vw",
         height: "5vh",
         width: "2.5vw",
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
+    },
+    imageThumbnail: {
+        height: "60%",
+        width: "100%",
+        backgroundColor: "red"
+    },
+    projectDesc: {
+        height: "30%",
+        width: "100%",
+        backgroundColor: "orange"
+    },
+    projectToolbar: {
+        height: "10%",
+        width: "100%",
+    },
+    thumbnailIndicator: {
+        position: "absolute",
+        height: "2vh",
+        width: "20vw",
+        left: "30vw",
+        top: "3vh",
+        backgroundColor: 'yellow'
     }
 };
 
@@ -56,7 +76,17 @@ class ProjectModal extends React.Component {
 
                     <div className={classes.thumb}>
 
-                        PROJECT
+                        <div className={classes.thumbnailIndicator}></div>
+
+                        <div className={classes.imageThumbnail}>
+
+                        </div>
+                        <div className={classes.projectDesc}>
+
+                        </div>
+                        <div className={classes.projectToolbar}>
+
+                        </div>
 
                     </div>
                 </div>

@@ -75,8 +75,33 @@
       max-width: 100% !important;
 
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      p {
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-width: 80% !important;
+        width: 80% !important;
+        max-width: 80% !important;
+
+        display: none;
+
+        // Todo Font Style
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      &:hover i {
+        display: none;
+      }
+
+      &:hover p {
+        display: block;
+      }
     }
 
     .title {

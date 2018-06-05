@@ -165,14 +165,12 @@ class SideNav extends Component {
 
                         {this.state.skill === 1 && (
                             <SkillTab
-                                title={"1"}
                                 skills={skills1}
                             />
                         )}
 
                         {this.state.skill === 2 && (
                             <SkillTab
-                                title={"2"}
                                 skills={skills2}
                             />
                         )}

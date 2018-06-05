@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './assets/PageHome.scss';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {Tooltip} from "@material-ui/core";
 
 class PageHome extends Component {
 
@@ -18,63 +18,55 @@ class PageHome extends Component {
                     <div className="thumb">
                         <div className="logo">
                             <i className="fab fa-sass fa-5x"/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                         </div>
+
                         {/*<div className="title">*/}
                             {/*<p>TITLE</p>*/}
                         {/*</div>*/}
+
                     </div>
                     <div className="thumb">
                         <div className="logo">
                             <i className="fab fa-react fa-5x"/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                         </div>
                     </div>
                     <div className="thumb">
                         <div className="logo">
                             <i className="fab fa-docker fa-5x"/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="stats">
-                    <ReactCSSTransitionGroup
-                        transitionName="example"
-                        transitionEnterTimeout={500}
-                        transitionLeaveTimeout={300}>
 
-                        {
-                            <div className="line">
-                                <div className="progress-bar first">
-                                    <p>80%</p>
-                                </div>
+                    <div className="line">
+                        <Tooltip id="tooltip-icon" title="Info bar" placement="right">
+                            <div className="progress-bar first">
+                                <p>80%</p>
                             </div>
-                        }
-                    </ReactCSSTransitionGroup>
-                    <ReactCSSTransitionGroup
-                        transitionName="example"
-                        transitionEnterTimeout={500}
-                        transitionLeaveTimeout={300}>
+                        </Tooltip>
+                    </div>
 
-                        {
-                            <div className="line">
-                                <div className="progress-bar second">
-                                    <p>60%</p>
-                                </div>
-                            </div>
-                        }
-                    </ReactCSSTransitionGroup>
-                    <ReactCSSTransitionGroup
-                        transitionName="example"
-                        transitionEnterTimeout={500}
-                        transitionLeaveTimeout={300}>
 
-                        {
-                            <div className="line">
-                                <div className="progress-bar third">
-                                    <p>40%</p>
-                                </div>
+                    <div className="line">
+                        <Tooltip id="tooltip-icon" title="Info bar 2" placement="right">
+                            <div className="progress-bar second">
+                                <p>60%</p>
                             </div>
-                        }
-                    </ReactCSSTransitionGroup>
+                        </Tooltip>
+                    </div>
+
+
+                    <div className="line">
+                        <Tooltip id="tooltip-icon" title="Info bar 3" placement="right">
+                            <div className="progress-bar third">
+                                <p>40%</p>
+                            </div>
+                        </Tooltip>
+                    </div>
 
                 </div>
 

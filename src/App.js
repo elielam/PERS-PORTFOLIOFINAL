@@ -13,8 +13,8 @@ const PAGEPORTFOLIO = { id: 3, title: "PORTFOLIO"};
 class App extends Component {
     state = {
         page : PAGEHOME,
-        openMapModal: true,
-        openProjectModal: false,
+        openMapModal: false,
+        openProjectModal: true,
         openContactModal: false
     };
 
@@ -112,6 +112,7 @@ class App extends Component {
         this.setState({ openContactModal: false });
     };
 
+  // Todo test
   render() {
     return (
 
@@ -124,6 +125,8 @@ class App extends Component {
             <div className="panel">
 
                 {/* ------------------------- SIDENAV ------------------------- */}
+
+
 
                 <SideNav
                     page={this.state.page}
