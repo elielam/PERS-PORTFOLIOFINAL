@@ -24,7 +24,7 @@ class CourseThumb extends Component {
                 </div>
                 <div className="desc">
                     <h6>{course.title}</h6>
-                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>*/}
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                 </div>
             </div>
 

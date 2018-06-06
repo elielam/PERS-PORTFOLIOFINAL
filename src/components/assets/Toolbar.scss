@@ -25,7 +25,7 @@
 
   // Todo Color
   color: $white !important;
-  background: $primaryOpacityColor !important;
+  background: $primaryColor !important;
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   // BTNS
@@ -47,17 +47,18 @@
     align-items: center;
 
     // Todo Color
-    background-color: $grey800O;
+    background-color: transparent;
 
     &:hover {
-      background-color: $grey500O;
+      // Todo Color
+      background-color: $primaryColorLighter;
     }
   }
   // Todo Border
   .previous { border-bottom-left-radius: 10px !important; }
   // Todo Border
   .next { border-bottom-right-radius: 10px !important; }
-  .disabled { pointer-events: none; cursor: default; background-color: $grey500O; };
+  .disabled { pointer-events: none; cursor: default; background-color: $primaryColorLighter2; };
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   // LINKS
@@ -94,11 +95,9 @@
       justify-content: center;
       align-items: center;
 
-      // Todo Color
-      background-color: $grey700O;
-
       &:hover {
-        background-color: $grey500O;
+        // Todo Color
+        background-color: $primaryColorLighter;
       }
     }
   }

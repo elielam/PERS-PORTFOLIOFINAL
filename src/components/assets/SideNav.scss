@@ -1,41 +1,5 @@
 @import "../../assets/vars";
 
-// Todo Remove
-@keyframes bgcolorchange {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: green;
-  }
-  50% {
-    background-color: blue;
-  }
-  75% {
-    background-color: purple;
-  }
-  100% {
-    background-color: red;
-  }
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes bgcolorchange {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: green;
-  }
-  50% {
-    background-color: blue;
-  }
-  75% {
-    background-color: purple;
-  }
-  100% {
-    background-color: red;
-  }
-}
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // SIDENAV
@@ -56,7 +20,7 @@
   border-radius: 10px !important;
 
   // Todo Color
-  background: $primaryOpacityColor;
+  background: transparent;
 
   // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   // TOP
@@ -105,18 +69,19 @@
 
       // Todo Color
       color: $white !important;
-      background-color: transparent;
+      background-color: $primaryColor;
 
       p {
         margin: 0 !important;
         padding: 0 !important;
         // Todo Font Styles
+        color: $primaryTextColor;
         font-size: 36px;
         font-weight: bold;
       }
     }
 
-    .active { background-color: $grey500O !important; }
+    .active { background-color: $primaryColor !important; }
     .link {
       margin: 0 !important;
       padding: 0 !important;
@@ -135,13 +100,13 @@
 
       // Todo Color
       color: $white;
-      background-color: transparent;
+      background-color: $primaryColorLighter2;
       // Todo Border
-      border-top: 1px solid $grey500;
+      border-top: 1px solid $primaryColor;
 
       &:hover {
         // Todo Color
-        background-color: $grey500O;
+        background-color: $primaryColor;
       }
 
       .p {
@@ -149,7 +114,8 @@
         padding: 0 !important;
 
         // Todo Font Style
-        font-family: primaryFont, fantasy !important;
+        font-size: 14px;
+        font-weight: bold;
       }
     }
   }
@@ -207,6 +173,9 @@
       display: flex;
       flex-direction: column;
 
+      // Todo Color
+      background-color: $primaryColor;
+
       .thumbs {
         margin: 0 !important;
         padding: 0 !important;
@@ -244,11 +213,11 @@
           align-items: center;
 
           // Todo Color
-          color: $white;
+          color: $primaryTextColor;
 
           &:hover {
             // Todo Color
-            background-color: $grey500O;
+            background-color: $primaryColorLighter2;
           }
         }
       }
@@ -332,7 +301,7 @@
     border-bottom-right-radius: 10px !important;
 
     // Todo Color
-    background: transparent !important;
+    background: $primaryColor !important;
     color: $white !important;
 
     .previous-btn-container {
@@ -356,7 +325,7 @@
 
       &:hover {
         // Todo Color
-        color: $grey900;
+        background-color: $primaryColorLighter;
       }
     }
 
@@ -397,7 +366,7 @@
 
       &:hover {
         // Todo Color
-        color: $grey900;
+        background-color: $primaryColorLighter;
       }
     }
   }

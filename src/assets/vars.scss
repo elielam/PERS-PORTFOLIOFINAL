@@ -36,13 +36,24 @@ $purpleA700: #AA00FF;
 $white: #FFFFFF;
 $black: #000000;
 
-$primaryColor: $grey900;
+$primaryColor: #222233;
+$primaryColorLighter: #313144;
+$primaryColorLighter2: #414158;
+$primaryColorLightest: #5a5a74;
+
+//$primaryColor: $grey900;
 //$primaryColor: white;
-$primaryOpacityColor: rgba(33, 33, 33, 0.6);
+
+$primaryOpacityColor: rgba(34, 34, 51, 0.6);
+
+//$primaryOpacityColor: rgba(33, 33, 33, 0.6);
 //$primaryOpacityColor: white;
 
 $secondaryColor: $purple900;
 $secondaryOpacityColor: rgba(74, 20, 140, 0.6);
+
+$primaryTextColor: $white;
+$secondaryTextColor: #AACCFF;
 
 @font-face {
   font-family: "primaryFont-black";

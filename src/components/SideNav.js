@@ -3,19 +3,19 @@ import './assets/SideNav.scss';
 import SkillTab from "./SkillTab";
 
 const skills1 = [
-    {id: 1, title: 'Java', lvl: '3'},
-    {id: 2, title: 'Android', lvl: '5'},
-    {id: 3, title: 'C+', lvl: '2'},
-    {id: 4, title: 'C#', lvl: '1'},
-    {id: 5, title: 'Web', lvl: '3'},
+    {id: 1, title: 'Java', lvl: '3', alternate: true},
+    {id: 2, title: 'Android', lvl: '5', alternate: false},
+    {id: 3, title: 'C+', lvl: '2', alternate: true},
+    {id: 4, title: 'C#', lvl: '1', alternate: false},
+    {id: 5, title: 'Web', lvl: '3', alternate: true},
 ];
 
 const skills2 = [
-    {id: 1, title: 'Photoshop', lvl: '4'},
-    {id: 2, title: 'Illustrator', lvl: '1'},
-    {id: 3, title: 'InDesign', lvl: '3'},
-    {id: 4, title: 'UX Design', lvl: '5'},
-    {id: 5, title: 'UI Design', lvl: '2'},
+    {id: 1, title: 'Photoshop', lvl: '4', alternate: true},
+    {id: 2, title: 'Illustrator', lvl: '1', alternate: false},
+    {id: 3, title: 'InDesign', lvl: '3', alternate: true},
+    {id: 4, title: 'UX Design', lvl: '5', alternate: false},
+    {id: 5, title: 'UI Design', lvl: '2', alternate: true},
 ];
 
 class SideNav extends Component {
@@ -83,7 +83,7 @@ class SideNav extends Component {
                         <div className="link active" onClick={handleBtn1}/>
                     ) : (
                         <div className="link" onClick={handleBtn1}>
-                            <p></p>
+                            <p>HOME</p>
                         </div>
                     )}
 
@@ -91,7 +91,7 @@ class SideNav extends Component {
                         <div className="link active" onClick={handleBtn2}/>
                     ) : (
                         <div className="link" onClick={handleBtn2}>
-                            <p></p>
+                            <p>COURSES</p>
                         </div>
                     )}
 
@@ -99,7 +99,7 @@ class SideNav extends Component {
                         <div className="link active" onClick={handleBtn3}/>
                     ) : (
                         <div className="link" onClick={handleBtn3}>
-                            <p></p>
+                            <p>PORTFOLIO</p>
                         </div>
                     )}
                 </div>

@@ -112,7 +112,6 @@ class App extends Component {
         this.setState({ openContactModal: false });
     };
 
-  // Todo test
   render() {
     return (
 

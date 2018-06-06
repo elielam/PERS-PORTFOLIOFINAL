@@ -3,11 +3,6 @@
  //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  //SELECTORS
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .vertical-direction-btn {
   margin: 0 !important;
   padding: 0 !important;
@@ -25,10 +20,11 @@ p {
   align-items: center;
 
   // Todo Color
-  background-color: $grey800O;
+  background-color: $primaryColor;
+  color: $primaryTextColor;
 
   &:hover {
-    background-color: $grey500O;
+    background-color: $primaryColorLighter;
   }
 }
 .up { border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; }

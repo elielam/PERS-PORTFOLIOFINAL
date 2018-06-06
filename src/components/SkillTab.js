@@ -26,18 +26,26 @@ class SkillTab extends Component {
             <div className="skilltab">
 
                 <div className="skills">
-
                     {skills.map((skill) =>
-                        <div key={skill.id} className="skill">
-                            <div className="libelle">
-                                <p>{skill.title}</p>
+                        skill.alternate === true ? (
+                            <div key={skill.id} className="skill alternate">
+                                <div className="libelle">
+                                    <p>{skill.title}</p>
+                                </div>
+                                <div className="level">
+                                    {returnLevel(skill)}
+                                </div>
                             </div>
-                            <div className="level">
-                                {returnLevel(skill)}
+                        ) : (
+                            <div key={skill.id} className="skill">
+                                <div className="libelle">
+                                    <p>{skill.title}</p>
+                                </div>
+                                <div className="level">
+                                    {returnLevel(skill)}
+                                </div>
                             </div>
-                        </div>
-                    )}
-
+                        ))}
                 </div>
 
             </div>
