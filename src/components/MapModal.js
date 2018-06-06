@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import MapContainer from "./MapContainer";
 
 const styles = {
     modal: {
@@ -13,15 +14,8 @@ const styles = {
     },
     thumb: {
         backgroundColor: "white",
-        position: "absolute",
         height: "100vh",
         width: "100vw",
-        left: 0,
-        top: 0,
-        borderShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
 
     },
     closeBtn: {
@@ -51,7 +45,7 @@ class MapModal extends React.Component {
                 >
                     <div className={classes.thumb}>
 
-                        <div id="map" style={{width: '100vw', height: '100vh', position: 'absolute', top: 0, left: '0'}}/>
+                        <MapContainer/>
 
                         <div className={classes.closeBtn} onClick={handleBtnMapModalClose}>
                             <i className="fas fa-times fa-2x"/>
@@ -60,9 +54,6 @@ class MapModal extends React.Component {
                     </div>
                 </div>
                 }
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGKVT4loGZnR42vasZrV6zpy9l2SgaVLk&callback=initMap">
-                </script>
             </div>
         );
     }

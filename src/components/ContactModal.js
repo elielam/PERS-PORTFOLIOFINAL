@@ -20,7 +20,6 @@ const styles = {
         width: "70vw",
         left: "15vw",
         top: "15vh",
-        borderShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

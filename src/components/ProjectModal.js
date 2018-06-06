@@ -19,7 +19,6 @@ const styles = {
         width: "80vw",
         left: "10vw",
         top: "10vh",
-        borderShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
