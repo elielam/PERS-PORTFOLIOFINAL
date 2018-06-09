@@ -19,7 +19,7 @@
   flex-direction: row;
 
   // Todo Border
-  border-bottom: 0.1px solid $primaryColorLighter2;
+  border-bottom: 0.1px solid $primaryColorLighter;
 
     .previous {
       margin: 0 !important;
@@ -42,7 +42,7 @@
 
       &:hover {
         // Todo Color
-        background: $primaryColorLighter2;
+        background: $primaryColorLighter;
       }
     }
     .thumbnail {
@@ -88,7 +88,7 @@
 
       &:hover {
         // Todo Color
-        background: $primaryColorLighter2;
+        background: $primaryColorLighter;
       }
     }
     .disabled { pointer-events: none; cursor: default;};

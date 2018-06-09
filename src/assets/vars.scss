@@ -1,5 +1,4 @@
 $grey: #9E9E9E;
-
 $grey100: #F5F5F5;
 $grey200: #EEEEEE;
 $grey300: #E0E0E0;
@@ -15,7 +14,6 @@ $grey800O: rgba(66, 66, 66, 0.6);
 $grey900: #212121;
 
 $purple: #9C27B0;
-
 $purple100: #E1BEE7;
 $purple200: #CE93D8;
 $purple300: #BA68C8;
@@ -27,7 +25,6 @@ $purple700O: rgba(123, 31, 162, 0.6);
 $purple800: #6A1B9A;
 $purple800O: rgba(106, 27, 154, 0.6);
 $purple900: #4A148C;
-
 $purpleA100: #EA80FC;
 $purpleA200: #E040FB;
 $purpleA400: #D500F9;
@@ -36,24 +33,41 @@ $purpleA700: #AA00FF;
 $white: #FFFFFF;
 $black: #000000;
 
-$primaryColor: #222233;
-$primaryColorLighter: #313144;
-$primaryColorLighter2: #414158;
-$primaryColorLightest: #5a5a74;
-
-//$primaryColor: $grey900;
-//$primaryColor: white;
-
-$primaryOpacityColor: rgba(34, 34, 51, 0.6);
-
-//$primaryOpacityColor: rgba(33, 33, 33, 0.6);
-//$primaryOpacityColor: white;
-
-$secondaryColor: $purple900;
-$secondaryOpacityColor: rgba(74, 20, 140, 0.6);
+//$primaryColor: #222233;
+//$primaryColorLighter: #313144;
+//$primaryColorLightest: #5a5a74;
 
 $primaryTextColor: $white;
-$secondaryTextColor: #AACCFF;
+
+$primaryColorDarker: #2F3335;
+$primaryColorDarkerOpacity: rgba(47,51,53,0.7);
+
+$primaryColorDarkest: #33383A;
+$primaryColorDarkestOpacity: rgba(51,56,58,0.7);
+
+$primaryColor: #393E41;
+$primaryColorOpacity: rgba(57,62,65,0.7);
+
+$primaryColorLighter: #3C4144;
+$primaryColorLighterOpacity: rgba(60,65,68,0.7);
+
+$primaryColorLightest: #414649;
+$primaryColorLightestOpacity: rgba(65,70,73,0.7);
+
+$secondaryColorDarker: #505668;
+$secondaryColorDarkerOpacity: rgba(80,86,104,0.7);
+
+$secondaryColorDarkest: #4C5163;
+$secondaryColorDarkestOpacity: rgba(76,81,99,0.7);
+
+$secondaryColor: #555B6E;
+$secondaryColorOpacity: rgba(85,91,110,0.7);
+
+$secondaryColorLighter: #585E72;
+$secondaryColorLighterOpacity: rgba(88,94,114,0.7);
+
+$secondaryColorLightest: #5C6277;
+$secondaryColorLightestOpacity: rgba(92,98,119,0.7);
 
 @font-face {
   font-family: "primaryFont-black";
