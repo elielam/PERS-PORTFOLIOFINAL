@@ -20,11 +20,11 @@
   align-items: center;
 
   // Todo Color
-  background-color: $primaryColor;
+  background-color: $primaryColorOpacity;
   color: $primaryTextColor;
 
   &:hover {
-    background-color: $primaryColorLighter;
+    background-color: $primaryColorLightestOpacity;
   }
 }
 .up { border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; }
@@ -41,5 +41,7 @@
   min-width: 100%!important;
   width: 100% !important;
   max-width: 100% !important;
+
+  background-color: $primaryColorOpacity;
 }
 

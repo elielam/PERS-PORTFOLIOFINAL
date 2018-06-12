@@ -38,13 +38,13 @@ export class MapContainer extends Component {
                     lat: 48.857304,
                     lng: 2.34733
                 }}
-                zoom={14}
+                zoom={8}
                 style={style}
                 onClick={this.onMapClicked}
             >
 
                 <Marker onClick={this.onMarkerClick}
-                        name={'Maybe you can find me here ! On this bridge , yeah ..'} />
+                        name={'Maybe you can find me here !'} />
 
                 <InfoWindow
                     marker={this.state.activeMarker}

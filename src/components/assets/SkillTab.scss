@@ -18,6 +18,9 @@
   display: flex;
   flex-direction: column;
 
+  // Todo Color
+  background-color: transparent;
+
   .skills {
     margin: 0 !important;
     padding: 0 !important;
@@ -32,6 +35,9 @@
 
     display: flex;
     flex-direction: column;
+
+    // Todo Color
+    background-color: transparent;
 
 
     .skill {
@@ -49,6 +55,9 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      // Todo Color
+      background-color: transparent;
 
       .libelle {
         margin: 0 !important;
@@ -99,6 +108,6 @@
         }
       }
     }
-    .alternate { background-color: $primaryColorLighter !important; }
+    .alternate { background-color: $primaryColorLightestOpacity !important; }
   }
 }

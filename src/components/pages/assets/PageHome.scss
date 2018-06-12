@@ -19,7 +19,7 @@
   max-width: 100% !important;
 
   // Todo Color
-  background-color: $primaryColor;
+  background-color: $primaryColorOpacity;
 }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,11 +58,11 @@
     align-items: center;
 
     // Todo Color
-    background-color: $primaryColorLighter;
+    background-color: $primaryColorLighterOpacity;
 
     // Todo Deserve Better
     &:hover {
-      background-color: $primaryColorLighter;
+      background-color: $primaryColorLightestOpacity;
     }
 
     .logo {
@@ -173,7 +173,7 @@
     flex-direction: row;
 
     // Todo Color
-    background-color: $white;
+    background-color: transparent;
 
     &:hover .progress-bar p {
       visibility: visible;
@@ -211,7 +211,7 @@
       max-width: 80% !important;
 
       // Todo Color
-      background-color: $primaryColorLightest;
+      background-color: $primaryColorLightestOpacity;
     }
     .second {
       min-width: 60% !important;
@@ -219,7 +219,7 @@
       max-width: 60% !important;
 
       // Todo Color
-      background-color: $primaryColorLighter;
+      background-color: $primaryColorLighterOpacity;
     }
     .third {
       min-width: 40% !important;
@@ -231,7 +231,7 @@
       max-height: 100% !important;
 
       // Todo Color
-      background-color: $primaryColorLighter;
+      background-color: $primaryColorOpacity;
     }
   }
 }

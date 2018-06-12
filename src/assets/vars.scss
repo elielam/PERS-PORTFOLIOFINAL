@@ -1,145 +1,72 @@
-$grey: #9E9E9E;
-$grey100: #F5F5F5;
-$grey200: #EEEEEE;
-$grey300: #E0E0E0;
-$grey300O: rgba(224, 224, 224, 0.6);
-$grey400: #BDBDBD;
-$grey500: #9E9E9E;
-$grey500O: rgba(158, 158, 158, 0.6);
-$grey600: #757575;
-$grey700: #616161;
-$grey700O: rgba(97, 97, 97, 0.6);
-$grey800: #424242;
-$grey800O: rgba(66, 66, 66, 0.6);
-$grey900: #212121;
-
-$purple: #9C27B0;
-$purple100: #E1BEE7;
-$purple200: #CE93D8;
-$purple300: #BA68C8;
-$purple400: #AB47BC;
-$purple500: #9C27B0;
-$purple600: #8E24AA;
-$purple700: #7B1FA2;
-$purple700O: rgba(123, 31, 162, 0.6);
-$purple800: #6A1B9A;
-$purple800O: rgba(106, 27, 154, 0.6);
-$purple900: #4A148C;
-$purpleA100: #EA80FC;
-$purpleA200: #E040FB;
-$purpleA400: #D500F9;
-$purpleA700: #AA00FF;
-
-$white: #FFFFFF;
-$black: #000000;
+//$grey: #9E9E9E;
+//$grey100: #F5F5F5;
+//$grey200: #EEEEEE;
+//$grey300: #E0E0E0;
+//$grey300O: rgba(224, 224, 224, 0.6);
+//$grey400: #BDBDBD;
+//$grey500: #9E9E9E;
+//$grey500O: rgba(158, 158, 158, 0.6);
+//$grey600: #757575;
+//$grey700: #616161;
+//$grey700O: rgba(97, 97, 97, 0.6);
+//$grey800: #424242;
+//$grey800O: rgba(66, 66, 66, 0.6);
+//$grey900: #212121;
+//
+//$purple: #9C27B0;
+//$purple100: #E1BEE7;
+//$purple200: #CE93D8;
+//$purple300: #BA68C8;
+//$purple400: #AB47BC;
+//$purple500: #9C27B0;
+//$purple600: #8E24AA;
+//$purple700: #7B1FA2;
+//$purple700O: rgba(123, 31, 162, 0.6);
+//$purple800: #6A1B9A;
+//$purple800O: rgba(106, 27, 154, 0.6);
+//$purple900: #4A148C;
+//$purpleA100: #EA80FC;
+//$purpleA200: #E040FB;
+//$purpleA400: #D500F9;
+//$purpleA700: #AA00FF;
 
 //$primaryColor: #222233;
 //$primaryColorLighter: #313144;
 //$primaryColorLightest: #5a5a74;
 
+$white: #FFFFFF;
+$black: #000000;
+
+$backgroundColor: $white;
+
 $primaryTextColor: $white;
 
 $primaryColorDarker: #2F3335;
-$primaryColorDarkerOpacity: rgba(47,51,53,0.7);
+$primaryColorDarkerOpacity: rgba(47,51,53,0.9);
 
 $primaryColorDarkest: #33383A;
-$primaryColorDarkestOpacity: rgba(51,56,58,0.7);
+$primaryColorDarkestOpacity: rgba(51,56,58,0.9);
 
 $primaryColor: #393E41;
-$primaryColorOpacity: rgba(57,62,65,0.7);
+$primaryColorOpacity: rgba(57,62,65,0.9);
 
 $primaryColorLighter: #3C4144;
-$primaryColorLighterOpacity: rgba(60,65,68,0.7);
+$primaryColorLighterOpacity: rgba(60,65,68,0.9);
 
 $primaryColorLightest: #414649;
-$primaryColorLightestOpacity: rgba(65,70,73,0.7);
+$primaryColorLightestOpacity: rgba(65,70,73,0.9);
 
 $secondaryColorDarker: #505668;
-$secondaryColorDarkerOpacity: rgba(80,86,104,0.7);
+$secondaryColorDarkerOpacity: rgba(80,86,104,0.9);
 
 $secondaryColorDarkest: #4C5163;
-$secondaryColorDarkestOpacity: rgba(76,81,99,0.7);
+$secondaryColorDarkestOpacity: rgba(76,81,99,0.9);
 
 $secondaryColor: #555B6E;
-$secondaryColorOpacity: rgba(85,91,110,0.7);
+$secondaryColorOpacity: rgba(85,91,110,0.9);
 
 $secondaryColorLighter: #585E72;
-$secondaryColorLighterOpacity: rgba(88,94,114,0.7);
+$secondaryColorLighterOpacity: rgba(88,94,114,0.9);
 
 $secondaryColorLightest: #5C6277;
-$secondaryColorLightestOpacity: rgba(92,98,119,0.7);
-
-@font-face {
-  font-family: "primaryFont-black";
-  src: url("/fonts/Roboto/Roboto-Black.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-black-italic";
-  src: url("/fonts/Roboto/Roboto-BlackItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-bold";
-  src: url("/fonts/OpenSans/OpenSans-Bold.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-bold-condensed";
-  src: url("/fonts/Roboto/Roboto-BoldCondensed.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-bold-condensed-italic";
-  src: url("/fonts/Roboto/Roboto-BoldCondensedItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-bold-italic";
-  src: url("/fonts/Roboto/Roboto-BoldItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-condensed";
-  src: url("/fonts/Roboto/Roboto-Condensed.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-condensed-italic";
-  src: url("/fonts/Roboto/Roboto-CondensedItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-italic";
-  src: url("/fonts/Roboto/Roboto-Italic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-light";
-  src: url("/fonts/Roboto/Roboto-Light.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-light-italic";
-  src: url("/fonts/Roboto/Roboto-LightItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-medium";
-  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-medium-italic";
-  src: url("/fonts/Roboto/Roboto-MediumItalic.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-thin";
-  src: url("/fonts/Roboto/Roboto-Thin.ttf") format("ttf")
-}
-
-@font-face {
-  font-family: "primaryFont-thin-italic";
-  src: url("/fonts/Roboto/Roboto-ThinItalic.ttf") format("ttf")
-}
+$secondaryColorLightestOpacity: rgba(92,98,119,0.9);
