@@ -15,14 +15,17 @@ class App extends Component {
         page : PAGEHOME,
         openMapModal: false,
         openProjectModal: false,
-        openContactModal: false
+        openContactModal: false,
+        modalAlertExperimental: true,
     };
 
     handlePreviousBtn() {
         let pageID = this.state.page.id;
         switch (pageID) {
             case 1:
-                alert('start');
+                this.setState({
+                    page: {...PAGEPORTFOLIO}
+                });
                 break;
             case 2:
                 this.setState({
@@ -55,19 +58,15 @@ class App extends Component {
                 });
                 break;
             case 3:
-                alert('finish');
+                this.setState({
+                    page: {...PAGEHOME}
+                });
                 break;
             default:
                 alert("An error occurred");
                 window.location = "/";
                 break;
         }
-    }
-
-    handleHomeBtn() {
-        this.setState({
-            page: {...PAGEHOME}
-        });
     }
 
     handleNavSide1Btn() {
@@ -112,6 +111,12 @@ class App extends Component {
         this.setState({ openContactModal: false });
     };
 
+    handleModalAlertExperimentalClose(){
+        this.setState({
+            modalAlertExperimental: false
+        })
+    };
+
   render() {
     return (
 
@@ -142,8 +147,9 @@ class App extends Component {
                     page={this.state.page}
                     previousBtnClick={this.handlePreviousBtn.bind(this)}
                     nextBtnClick={this.handleNextBtn.bind(this)}
-                    homeBtnClick={this.handleHomeBtn.bind(this)}
                     handleBtnProjectModalOpen={this.handleProjectModalOpen.bind(this)}
+                    modalAlertExperimental={this.state.modalAlertExperimental}
+                    handleModalAlertExperimentalClose={this.handleModalAlertExperimentalClose.bind(this)}
                 />
 
                 <ContactModal

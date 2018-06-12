@@ -3,19 +3,35 @@ import './assets/SideNav.scss';
 import SkillTab from "./SkillTab";
 
 const skills1 = [
-    {id: 1, title: 'Java', lvl: '3', alternate: true},
+    {id: 1, title: 'Java', lvl: '5', alternate: true},
     {id: 2, title: 'Android', lvl: '5', alternate: false},
-    {id: 3, title: 'C+', lvl: '2', alternate: true},
-    {id: 4, title: 'C#', lvl: '1', alternate: false},
-    {id: 5, title: 'Web', lvl: '3', alternate: true},
+    {id: 3, title: 'Maven', lvl: '4', alternate: true},
+    {id: 4, title: 'ODBC', lvl: '5', alternate: false},
+    {id: 5, title: 'Gradle', lvl: '3', alternate: true},
 ];
 
 const skills2 = [
-    {id: 1, title: 'Photoshop', lvl: '4', alternate: true},
-    {id: 2, title: 'Illustrator', lvl: '1', alternate: false},
-    {id: 3, title: 'InDesign', lvl: '3', alternate: true},
+    {id: 1, title: 'PHP', lvl: '6', alternate: true},
+    {id: 2, title: 'HTML', lvl: '7', alternate: false},
+    {id: 3, title: 'CSS/SASS', lvl: '6', alternate: true},
+    {id: 4, title: 'JS ES2017', lvl: '5', alternate: false},
+    {id: 5, title: 'API REST', lvl: '6', alternate: true},
+];
+
+const skills3 = [
+    {id: 1, title: 'Photoshop', lvl: '6', alternate: true},
+    {id: 2, title: 'Illustrator', lvl: '5', alternate: false},
+    {id: 3, title: 'InDesign', lvl: '5', alternate: true},
     {id: 4, title: 'UX Design', lvl: '5', alternate: false},
-    {id: 5, title: 'UI Design', lvl: '2', alternate: true},
+    {id: 5, title: 'UI Design', lvl: '3', alternate: true},
+];
+
+const skills4 = [
+    {id: 1, title: 'GIT', lvl: '6', alternate: true},
+    {id: 2, title: 'SCRUM', lvl: '4', alternate: false},
+    {id: 3, title: 'Selenium', lvl: '3', alternate: true},
+    {id: 4, title: 'Unit test', lvl: '3', alternate: false},
+    {id: 5, title: 'MVC', lvl: '5', alternate: true},
 ];
 
 class SideNav extends Component {
@@ -28,12 +44,22 @@ class SideNav extends Component {
         switch (skill) {
             case 1:
                 this.setState({
-                    skill : 2
+                    skill : 4
                 });
                 break;
             case 2:
                 this.setState({
                     skill : 1
+                });
+                break;
+            case 3:
+                this.setState({
+                    skill : 2
+                });
+                break;
+            case 4:
+                this.setState({
+                    skill : 3
                 });
                 break;
             default:
@@ -50,6 +76,16 @@ class SideNav extends Component {
                 });
                 break;
             case 2:
+                this.setState({
+                    skill : 3
+                });
+                break;
+            case 3:
+                this.setState({
+                    skill : 4
+                });
+                break;
+            case 4:
                 this.setState({
                     skill : 1
                 });
@@ -121,18 +157,18 @@ class SideNav extends Component {
 
                         <div className="thumbs">
                             <div className="thumb">
-                                <a className="no-decoration"><i className="fab fa-github-square fa-2x"/></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/elielam" className="no-decoration"><i className="fab fa-github-square fa-2x"/></a>
                             </div>
                             <div className="thumb">
-                                <a className="no-decoration"><i className="fab fa-linkedin fa-2x"/></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://fr.linkedin.com/in/elie-laloum" className="no-decoration"><i className="fab fa-linkedin fa-2x"/></a>
                             </div>
                             <div className="thumb">
-                                <a className="no-decoration"><i className="fab fa-facebook-square fa-2x"/></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/elicopzzer" className="no-decoration"><i className="fab fa-facebook-square fa-2x"/></a>
                             </div>
-                            <div className="thumb">
-                                <a className="no-decoration"><i className="fab fa-whatsapp-square fa-2x"/></a>
+                            <div className="thumb disabled">
+                                <a target="_blank" rel="noopener noreferrer" href="" className="no-decoration"><i className="fab fa-whatsapp-square fa-2x"/></a>
                             </div>
-                            <div className="thumb" onClick={handleBtnContactModalOpen}>
+                            <div className="thumb disabled" onClick={handleBtnContactModalOpen}>
                                 <a className="no-decoration"><i className="fas fa-envelope-square fa-2x" onClick={handleBtnContactModalOpen}/></a>
                             </div>
                         </div>
@@ -172,6 +208,18 @@ class SideNav extends Component {
                         {this.state.skill === 2 && (
                             <SkillTab
                                 skills={skills2}
+                            />
+                        )}
+
+                        {this.state.skill === 3 && (
+                            <SkillTab
+                                skills={skills3}
+                            />
+                        )}
+
+                        {this.state.skill === 4 && (
+                            <SkillTab
+                                skills={skills4}
                             />
                         )}
 

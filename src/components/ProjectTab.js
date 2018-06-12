@@ -4,33 +4,7 @@ import './assets/SkillTab.scss';
 class ProjectTab extends Component {
     render() {
 
-        const { project, handleBtnProjectModalOpen } = this.props;
-
-        let rowNbr = project/4;
-
-        // let lastRow = 0;
-        let row = [];
-        switch(rowNbr) {
-            case 1:
-                // lastRow = 1;
-                row = [1];
-                break;
-            case 2:
-                // lastRow = 2;
-                row = [1, 2];
-                break;
-            case 3:
-                // lastRow = 3;
-                row = [1, 2, 3];
-                break;
-            case 4:
-                // lastRow = 4;
-                row = [1, 2, 3, 4];
-                break;
-            default:
-                break;
-        }
-        // let lastRowThumbs = project % lastRow;
+        const { row1, row2, row3, handleBtnProjectModalOpen } = this.props;
 
         return (
 
@@ -38,26 +12,41 @@ class ProjectTab extends Component {
 
             <div className="projects">
 
-                {row.map((number) =>
-                    <div key={number} className="row">
-                        <div className="col" onClick={handleBtnProjectModalOpen}>
-                            <img src="" alt=""/>
-                            <div className="overlay"/>
-                        </div>
-                        <div className="col" onClick={handleBtnProjectModalOpen}>
-                            <img src="" alt=""/>
-                            <div className="overlay"/>
-                        </div>
-                        <div className="col" onClick={handleBtnProjectModalOpen}>
-                            <img src="" alt=""/>
-                            <div className="overlay"/>
-                        </div>
-                        <div className="col" onClick={handleBtnProjectModalOpen}>
-                            <img src="" alt=""/>
-                            <div className="overlay"/>
-                        </div>
+                    <div className="row">
+                        {row1.map((project) =>
+                            <div key={project.id} className="col" onClick={handleBtnProjectModalOpen}>
+                                <img src={project.imgUrl} alt=""/>
+                                <p>{project.title}</p>
+                                <div className="overlay">
+                                    <p>{project.desc}</p>
+                                </div>
+                            </div>
+                        )}
                     </div>
-                )}
+
+                    <div className="row">
+                        {row2.map((project) =>
+                            <div key={project.id} className="col" onClick={handleBtnProjectModalOpen}>
+                                <img src={project.imgUrl} alt=""/>
+                                <p>{project.title}</p>
+                                <div className="overlay">
+                                    <p>{project.desc}</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="row">
+                        {row3.map((project) =>
+                            <div key={project.id} className="col" onClick={handleBtnProjectModalOpen}>
+                                <img src={project.imgUrl} alt=""/>
+                                <p>{project.title}</p>
+                                <div className="overlay">
+                                    <p>{project.desc}</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
 
             </div>
 

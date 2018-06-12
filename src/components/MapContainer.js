@@ -44,7 +44,7 @@ export class MapContainer extends Component {
             >
 
                 <Marker onClick={this.onMarkerClick}
-                        name={'Maybe you can find me here !'} />
+                        name={'You can find me here !'} />
 
                 <InfoWindow
                     marker={this.state.activeMarker}

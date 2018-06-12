@@ -18,6 +18,9 @@
   display: flex !important;
   flex-direction: row;
 
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+
   // Todo Color
   background-color: $primaryColorOpacity;
 
@@ -40,12 +43,15 @@
       justify-content: center;
       align-items: center;
 
+      transition: all .2s ease-in-out;
+
       // Todo Color
       color: $white;
 
+      border-top-left-radius: 10px !important;
+
       &:hover {
-        // Todo Color
-        background: $primaryColorLightestOpacity;
+        transform: scale(1.2);
       }
     }
     .thumbnail {
@@ -86,17 +92,19 @@
       justify-content: center;
       align-items: center;
 
+      border-top-right-radius: 10px !important;
+
+      transition: all .2s ease-in-out;
+
       // Todo Color
       color: $white;
 
       &:hover {
-        // Todo Color
-        background: $primaryColorLighter;
+        transform: scale(1.2);
       }
     }
     .disabled { pointer-events: none; cursor: default;};
 }
-
 .projects {
   margin: 0 !important;
   padding: 0 !important;
@@ -156,6 +164,9 @@
         margin: 0 !important;
         padding: 0 !important;
 
+        top: 0;
+        left: 0;
+
         min-height: 100% !important;
         height: 100% !important;
         max-height: 100% !important;
@@ -163,7 +174,40 @@
         min-width: 100% !important;
         width: 100% !important;
         max-width: 100% !important;
+
+        position: absolute;
       }
+
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        top: 25%;
+        left: 25%;
+
+        min-height: 50% !important;
+        height: 50% !important;
+        max-height: 50% !important;
+
+        min-width: 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        // Todo Color
+        background-color: transparent !important;
+
+        position: absolute;
+
+        // Todo Font Style
+        font-weight: bold;
+        text-align: center;
+        color: black;
+      }
+
 
       .overlay {
         margin: 0 !important;
@@ -186,7 +230,38 @@
         transition: visibility 0s, opacity 0.5s linear;
 
         // Todo Color
-        background-color: $primaryColorLightestOpacity;
+        background-color: $primaryColorDarkestOpacity;
+
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+
+          top: 25%;
+          left: 25%;
+
+          min-height: 50% !important;
+          height: 50% !important;
+          max-height: 50% !important;
+
+          min-width: 50% !important;
+          width: 50% !important;
+          max-width: 50% !important;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // Todo Color
+          background-color: transparent !important;
+
+          position: absolute;
+
+          // Todo Font Style
+          font-weight: bold;
+          text-align: center;
+          color: $primaryTextColor;
+          text-shadow: 2px 2px $black;
+        }
       }
     }
   }

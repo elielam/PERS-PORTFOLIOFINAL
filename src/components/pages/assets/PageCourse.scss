@@ -19,12 +19,14 @@
   justify-content: center;
   align-items: center;
 
+  transition: all .2s ease-in-out;
+
   // Todo Color
   background-color: $primaryColorOpacity;
   color: $primaryTextColor;
 
   &:hover {
-    background-color: $primaryColorLightestOpacity;
+    background-color: $primaryColorDarkestOpacity;
   }
 }
 .up { border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; }

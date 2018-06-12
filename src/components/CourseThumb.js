@@ -6,11 +6,31 @@ class CourseThumb extends Component {
 
         const { course } = this.props;
 
+        const style = {
+            backgroundImage: "url(" + course.imgUrl + ")",
+            backgroundSize: "cover",
+            margin: "0 !important",
+            padding: "0 !important",
+
+            minHeight: "100% !important",
+            height: "100% !important",
+            maxHeight: "100%!important",
+
+            minWidth: "100%!important",
+            width: "100% !important",
+            maxWidth: "100% !important",
+
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center"
+        };
+
         return (
 
             /* ------------------------- PROJECT TAB ------------------------- */
 
-            <div className="course-thumb">
+            <div className="course-thumb" style={style}>
                 <div className="infos">
 
                     {/* Todo : remove */}
@@ -21,10 +41,11 @@ class CourseThumb extends Component {
                 </div>
                 <div className="year">
                     <p>{course.year}</p>
+                    <p1>{course.type}</p1>
+                    <p2>{course.title}</p2>
                 </div>
                 <div className="desc">
-                    <h6>{course.title}</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus leo quis velit venenatis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    <p>{course.desc}</p>
                 </div>
             </div>
 
