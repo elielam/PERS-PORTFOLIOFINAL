@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './assets/PageCourse.scss';
 import CourseThumb from "../CourseThumb";
 
-const course1 = {id: 1, title: 'Lycée Jean-Perrin', year: '2014', desc: "Training in computer technologies, national diploma in the biggest technological high school of europe", type: "STUDY", isDiplomed: {state: true}, imgUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Ravenna_High_School_1.jpg"};
-const course2 = {id: 2, title: 'INSTA', year: '2016', desc: "Obtaining senior technician and license analyst and software architect at the National Institute of Advanced Technologies. Preparation of the master this year (2018).", type: "STUDY", isDiplomed: {state: true}, imgUrl: "https://sciencebusiness.net/sites/default/files/styles/article/public/2017-09/jussieu%20upmc%20paris.jpg?itok=rXG6BmZ_"};
-const course3 = {id: 3, title: 'Technisites', year: '2016', desc: "Technician in center of centralization of print data of a network of medical analysis laboratory.", type: "WORK", isDiplomed: {state: false}, imgUrl: "https://printm3d.com/themicro/assets/img/scene2.jpg"};
-const course4 = {id: 4, title: 'BNP Paribas', year: '2017', desc: "Developer of applications and web tools for financial data analysis and reporting for BNP Paribas, one of the largest European bank.", type: "WORK", isDiplomed: {state: false}, imgUrl: "https://www.worldbuild365.com/serveFile/media/news/4f87658ef0de194413056248a00ce009/7dd651f26d6d8a57a5aaddc8c0b57031.jpg"};
+const course1 = {id: 1, title: 'Lycée Jean-Perrin', year: '2014', desc: "Training in computer technologies, national diploma in the biggest technological high school of europe", type: "STUDY", isDiplomed: {state: true}};
+const course2 = {id: 2, title: 'INSTA', year: '2016', desc: "Obtaining senior technician and license analyst and software architect at the National Institute of Advanced Technologies. Preparation of the master this year (2018).", type: "STUDY", isDiplomed: {state: true}};
+const course3 = {id: 3, title: 'Technisites', year: '2016', desc: "Technician in center of centralization of print data of a network of medical analysis laboratory.", type: "WORK", isDiplomed: {state: false}};
+const course4 = {id: 4, title: 'BNP Paribas', year: '2017', desc: "Developer of applications and web tools for financial data analysis and reporting for BNP Paribas, one of the largest European bank.", type: "WORK", isDiplomed: {state: false}};
 
 class PageCourse extends Component {
     state = {

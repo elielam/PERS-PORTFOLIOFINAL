@@ -53,7 +53,7 @@ class ModalAlertExperimental extends Component {
                 <br/>
                 <p>This page is not completed yet, <br/> you can still navigate in but you can be confronted with some bug that will be repaired soon !</p>
                 <br/>
-                <Button variant="contained" color="secondary"  onClick={handleModalAlertExperimentalClose}>Close</Button>
+                <Button variant="contained" color="secondary"  onClick={handleModalAlertExperimentalClose}>Continue</Button>
             </div>
 
         );
