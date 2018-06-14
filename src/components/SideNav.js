@@ -165,10 +165,10 @@ class SideNav extends Component {
                             <div className="thumb">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/elicopzzer" className="no-decoration"><i className="fab fa-facebook-square fa-2x"/></a>
                             </div>
-                            <div className="thumb disabled">
-                                <a target="_blank" rel="noopener noreferrer" href="" className="no-decoration"><i className="fab fa-whatsapp-square fa-2x"/></a>
+                            <div className="thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="tel:+33633495607" className="no-decoration"><i className="fab fa-whatsapp-square fa-2x"/></a>
                             </div>
-                            <div className="thumb disabled" onClick={handleBtnContactModalOpen}>
+                            <div className="thumb" onClick={handleBtnContactModalOpen}>
                                 <a className="no-decoration"><i className="fas fa-envelope-square fa-2x" onClick={handleBtnContactModalOpen}/></a>
                             </div>
                         </div>

@@ -17,12 +17,13 @@ const styles = {
         backgroundColor: "white",
         position: "absolute",
         height: "70vh",
-        width: "70vw",
-        left: "15vw",
+        width: "50vw",
+        left: "25vw",
         top: "15vh",
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        border: "4px solid #393E41"
 
     },
     form: {
@@ -88,6 +89,7 @@ class ContactModal extends React.Component {
         this.state = {
             name: '',
             lastname: '',
+            mail: '',
             subject: '',
             message: '',
         };
@@ -103,7 +105,7 @@ class ContactModal extends React.Component {
     };
 
     handleSubmit(event) {
-        alert('A message was submitted by: ' + this.state.name + ' ' + this.state.lastname);
+        alert('The message submitted by: ' + this.state.name + ' ' + this.state.lastname + ' cannot be send ! Please retry or send directly to : pro@elielaloum.fr');
         event.preventDefault();
     }
 
@@ -142,6 +144,15 @@ class ContactModal extends React.Component {
                                     placeholder="Lastname"
                                     className={classes.lastnameInput}
                                     onChange={this.handleChange('lastname')}
+                                    margin="normal"
+                                />
+
+                                <TextField
+                                    id="contact-mail-input"
+                                    label="Enter your mail :"
+                                    placeholder="Mail"
+                                    className={classes.nameInput}
+                                    onChange={this.handleChange('mail')}
                                     margin="normal"
                                 />
 

@@ -28,10 +28,8 @@ const projects2row1 = [
     {id: 3, title: 'PROJECT', desc: "Lorem ipsum descriptum !", imgUrl: "http://static.cnews.fr/sites/default/files/default_images/default-thumbnail_0.jpg"},
     {id: 4, title: 'PROJECT', desc: "Lorem ipsum descriptum !", imgUrl: "http://static.cnews.fr/sites/default/files/default_images/default-thumbnail_0.jpg"},
 ];
-const projects2row2 = [
-];
-const projects2row3 = [
-];
+const projects2row2 = [];
+const projects2row3 = [];
 
 class PagePortfolio extends Component {
     state = {

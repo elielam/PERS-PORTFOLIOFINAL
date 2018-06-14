@@ -22,7 +22,8 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        border: "4px solid #393E41"
 
     },
     closeBtn: {

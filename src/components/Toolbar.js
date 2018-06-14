@@ -24,9 +24,9 @@ class Toolbar extends Component {
 
                     {/* LINK */}
 
-                    {/*<a className="link" onClick={homeBtnClick}>*/}
-                        {/*<i className="fas fa-home fa-2x"/>*/}
-                    {/*</a>*/}
+                    <a className="link">
+                        <i className="fas fa-user fa-2x"/>
+                    </a>
                 </div>
 
                 {/* NEXT BTN */}
