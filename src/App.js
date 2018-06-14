@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import MapModal from "./components/MapModal";
 import ProjectModal from "./components/ProjectModal";
 import ContactModal from "./components/ContactModal";
+import LoginModal from "./components/LoginModal";
 
 const PAGEHOME = { id: 1, title: "HOME"};
 const PAGECOURSE = { id: 2, title: "COURSE"};
@@ -16,6 +17,7 @@ class App extends Component {
         openMapModal: false,
         openProjectModal: false,
         openContactModal: false,
+        openLoginModal: false,
         modalAlertExperimental: true,
     };
 
@@ -111,6 +113,14 @@ class App extends Component {
         this.setState({ openContactModal: false });
     };
 
+    handleLoginModalOpen = () => {
+        this.setState({ openLoginModal: true });
+    };
+
+    handleLoginModalClose = () => {
+        this.setState({ openLoginModal: false });
+    };
+
     handleModalAlertExperimentalClose(){
         this.setState({
             modalAlertExperimental: false
@@ -147,7 +157,10 @@ class App extends Component {
                     page={this.state.page}
                     previousBtnClick={this.handlePreviousBtn.bind(this)}
                     nextBtnClick={this.handleNextBtn.bind(this)}
+
+                    handleBtnLoginModalOpen={this.handleLoginModalOpen.bind(this)}
                     handleBtnProjectModalOpen={this.handleProjectModalOpen.bind(this)}
+
                     modalAlertExperimental={this.state.modalAlertExperimental}
                     handleModalAlertExperimentalClose={this.handleModalAlertExperimentalClose.bind(this)}
                 />
@@ -165,6 +178,11 @@ class App extends Component {
                 <ProjectModal
                     open={this.state.openProjectModal}
                     handleBtnProjectModalClose={this.handleProjectModalClose.bind(this)}
+                />
+
+                <LoginModal
+                    open={this.state.openLoginModal}
+                    handleLoginModalClose={this.handleLoginModalClose.bind(this)}
                 />
 
             </div>

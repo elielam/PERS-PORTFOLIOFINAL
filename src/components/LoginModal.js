@@ -14,16 +14,17 @@ const styles = {
         display: 'block !important',
     },
     thumb: {
-        backgroundColor: "white",
+        backgroundColor: "#393E41",
+        color: "white",
         position: "absolute",
-        height: "70vh",
-        width: "50vw",
-        left: "25vw",
-        top: "15vh",
+        height: "60vh",
+        width: "20vw",
+        left: "40vw",
+        top: "20vh",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        border: "4px solid #393E41"
+        border: "4px solid white",
 
     },
     form: {
@@ -51,28 +52,15 @@ const styles = {
         alignItems: 'center'
     },
     mailInput: {
-        height: "auto",
+        height: "10%",
         width: "100%",
+        textAlign: "center",
     },
-    nameInput: {
+    passwordInput: {
         marginTop: "2%",
-        height: "auto",
+        height: "10%",
         width: "100%",
-    },
-    lastnameInput: {
-        marginTop: "2%",
-        height: "auto",
-        width: "100%",
-    },
-    subjectInput: {
-        marginTop: "2%",
-        height: "auto",
-        width: "100%",
-    },
-    messageInput: {
-        marginTop: "2%",
-        height: "auto",
-        width: "100%",
+        textAlign: "center",
     },
     btnSubmit: {
         marginTop: "2%",
@@ -90,15 +78,12 @@ const styles = {
     }
 };
 
-class ContactModal extends React.Component {
+class LoginModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            lastname: '',
             mail: '',
-            subject: '',
-            message: '',
+            password: '',
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -112,22 +97,21 @@ class ContactModal extends React.Component {
     };
 
     handleSubmit(event) {
-        alert('The message submitted by: ' + this.state.name + ' ' + this.state.lastname + ' cannot be send. Try on pro@elielaloum.fr !');
-        this.props.open = false;
+        alert('Connection try by: ' + this.state.mail + ' identified by ' + this.state.password);
         event.preventDefault();
     }
 
     render() {
-        const { classes, open, handleBtnContactModalClose } = this.props;
+        const { classes, open, handleLoginModalClose } = this.props;
 
         return (
             <div>
                 {open === true &&
                 <div
                     className={ classes.modal }
-                    onClose={handleBtnContactModalClose}
+                    onClose={handleLoginModalClose}
                 >
-                    <div className={classes.closeBtn} onClick={handleBtnContactModalClose}>
+                    <div className={classes.closeBtn} onClick={handleLoginModalClose}>
                         <i className="fas fa-times fa-2x"/>
                     </div>
 
@@ -139,44 +123,26 @@ class ContactModal extends React.Component {
 
                                 <input
                                 id="contact-mail-input"
+                                label="Enter your mail :"
                                 placeholder="Mail"
                                 className={classes.mailInput}
                                 onChange={this.handleChange('mail')}
                                 />
 
                                 <input
-                                id="contact-name-input"
-                                placeholder="Name"
-                                className={classes.nameInput}
-                                onChange={this.handleChange('name')}
-                                />
-
-                                <input
-                                    id="contact-lastname-input"
-                                    placeholder="Lastname"
-                                    className={classes.lastnameInput}
-                                    onChange={this.handleChange('lastname')}
-                                />
-
-                                <input
-                                    id="contact-subject-input"
-                                    placeholder="Subject"
-                                    className={classes.subjectInput}
-                                    onChange={this.handleChange('subject')}
-                                />
-
-                                <input
-                                    id="contact-message-input"
-                                    placeholder="Message"
-                                    className={classes.messageInput}
-                                    onChange={this.handleChange('message')}
+                                    id="contact-password-input"
+                                    label="Enter your password :"
+                                    placeholder="Password"
+                                    className={classes.passwordInput}
+                                    onChange={this.handleChange('password')}
+                                    margin="normal"
                                 />
 
                             </div>
 
                             <div className={classes.btnDiv}>
                                 <Button variant="raised" className={classes.btnSubmit} type="submit">
-                                    Send
+                                    Login
                                 </Button>
                             </div>
                         </form>
@@ -189,8 +155,8 @@ class ContactModal extends React.Component {
     }
 }
 
-ContactModal.propTypes = {
+LoginModal.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ContactModal);
+export default withStyles(styles)(LoginModal);

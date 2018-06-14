@@ -4,7 +4,7 @@ import './assets/Toolbar.scss';
 class Toolbar extends Component {
     render() {
 
-        const { previousBtnClick, nextBtnClick } = this.props;
+        const { previousBtnClick, nextBtnClick, handleBtnLoginModalOpen } = this.props;
 
         return (
 
@@ -24,7 +24,7 @@ class Toolbar extends Component {
 
                     {/* LINK */}
 
-                    <a className="link">
+                    <a className="link" onClick={handleBtnLoginModalOpen}>
                         <i className="fas fa-user fa-2x"/>
                     </a>
                 </div>

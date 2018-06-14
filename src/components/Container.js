@@ -10,7 +10,7 @@ class Container extends Component {
 
     render() {
 
-        const { page, previousBtnClick, nextBtnClick, handleBtnProjectModalOpen, modalAlertExperimental, handleModalAlertExperimentalClose } = this.props;
+        const { page, previousBtnClick, nextBtnClick, handleBtnLoginModalOpen, handleBtnProjectModalOpen, modalAlertExperimental, handleModalAlertExperimentalClose } = this.props;
 
         return (
 
@@ -42,6 +42,7 @@ class Container extends Component {
                     page={page}
                     previousBtnClick={previousBtnClick}
                     nextBtnClick={nextBtnClick}
+                    handleBtnLoginModalOpen={handleBtnLoginModalOpen}
                 />
 
             </div>
