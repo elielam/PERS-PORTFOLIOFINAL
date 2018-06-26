@@ -98,20 +98,17 @@ const styles = {
     },
     btnSubmit: {
         marginTop: "2%",
-        border: "none",
         height: "30%",
         width: "40%",
-        backgroundColor: "lightgrey !important",
-        borderRadius: "5px"
+        border: "0.1px solid blue !important",
+        backgroundColor: "white !important",
     },
     btnClose: {
         marginTop: "2%",
-        border: "none",
         height: "30%",
         width: "40%",
-        color: "white",
-        backgroundColor: "red !important",
-        borderRadius: "5px"
+        border: "0.1px solid red !important",
+        backgroundColor: "white !important",
     },
     closeBtn: {
         color: 'white',
