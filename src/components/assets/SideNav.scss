@@ -154,8 +154,71 @@
       width: 100% !important;
       max-width: 100% !important;
 
+      display: flex;
+      flex-direction: row;
+
       background: none no-repeat center center;
       background-size: cover;
+
+      .img {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-height: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+
+        min-width: 40% !important;
+        width: 40% !important;
+        max-width: 40% !important;
+
+        background: $white no-repeat center center;
+        background-size: cover;
+      }
+
+      .text {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-height: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+
+        min-width: 60% !important;
+        width: 60% !important;
+        max-width: 60% !important;
+
+        p {
+          margin: 0 !important;
+          margin-top: 3% !important;
+          margin-left: 5% !important;
+          padding: 0 !important;
+
+          min-height: 90% !important;
+          height: 90% !important;
+          max-height: 90% !important;
+
+          min-width: 90% !important;
+          width: 90% !important;
+          max-width: 90% !important;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          text-align: left;
+
+          border-radius: 0 !important;
+
+          // Todo Font Style
+          font-size: 12px;
+          font-weight: bold;
+
+          // Todo Color
+          background-color: $white !important;
+          color: $black !important;
+        }
+      }
     }
 
     .social {

@@ -147,6 +147,10 @@ class SideNav extends Component {
                     {/* DESCRIPTION */}
 
                     <div className="desc">
+                        <div className={"img"}></div>
+                        <div className={"text"}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in maximus arcu. In hac habitasse platea dictumst Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
                     </div>
 
                     {/* SOCIAL */}

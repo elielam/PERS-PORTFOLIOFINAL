@@ -44,38 +44,64 @@ const styles = {
     },
     btnDiv: {
         height: "20%",
-        width: "100%",
+        width: "30%",
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center'
     },
     mailInput: {
-        height: "auto",
+        height: "7%",
         width: "100%",
+        border: "none !important",
+        borderBottom: "1px solid lightgrey !important",
+        outline: "none !important"
     },
     nameInput: {
         marginTop: "2%",
-        height: "auto",
+        height: "7%",
         width: "100%",
+        border: "none !important",
+        borderBottom: "1px solid lightgrey !important",
+        outline: "none !important"
     },
     lastnameInput: {
         marginTop: "2%",
-        height: "auto",
+        height: "7%",
         width: "100%",
+        border: "none !important",
+        borderBottom: "1px solid lightgrey !important",
+        outline: "none !important"
     },
     subjectInput: {
         marginTop: "2%",
-        height: "auto",
+        height: "7%",
         width: "100%",
+        border: "none !important",
+        borderBottom: "1px solid lightgrey !important",
+        outline: "none !important"
     },
     messageInput: {
         marginTop: "2%",
-        height: "auto",
+        height: "30%",
         width: "100%",
+        border: "none !important",
+        borderBottom: "1px solid lightgrey !important",
+        outline: "none !important"
     },
     btnSubmit: {
         marginTop: "2%",
+        border: "none",
+        height: "30%",
+        width: "40%",
+    },
+    btnClose: {
+        marginTop: "2%",
+        border: "none",
+        height: "30%",
+        width: "40%",
+        color: "white",
+        backgroundColor: "red !important"
     },
     closeBtn: {
         color: 'white',
@@ -175,9 +201,12 @@ class ContactModal extends React.Component {
                             </div>
 
                             <div className={classes.btnDiv}>
-                                <Button variant="raised" className={classes.btnSubmit} type="submit">
+                                <button className={classes.btnSubmit} type="submit">
                                     Send
-                                </Button>
+                                </button>
+                                <button className={classes.btnClose} onClick={handleBtnContactModalClose}>
+                                    Cancel
+                                </button>
                             </div>
                         </form>
 
