@@ -111,12 +111,14 @@
       }
 
       &:hover i {
-        visibility: visible;
-        opacity: 0;
+        font-size: 50px !important;
+        margin-bottom: 2%;
       }
 
       // Todo show text transition
-      &:hover p {}
+      &:hover p {
+        display: block;
+      }
     }
 
     .title {

@@ -34,8 +34,15 @@ const styles = {
         flexDirection: 'column',
 
     },
+    titleDiv: {
+        height: "10%",
+        width: "100%",
+        display: 'flex',
+        flexDirection: 'row',
+        color: "grey"
+    },
     inputsDiv: {
-        height: "80%",
+        height: "70%",
         width: "100%",
         display: 'flex',
         flexDirection: 'column',
@@ -94,6 +101,8 @@ const styles = {
         border: "none",
         height: "30%",
         width: "40%",
+        backgroundColor: "lightgrey !important",
+        borderRadius: "5px"
     },
     btnClose: {
         marginTop: "2%",
@@ -101,7 +110,8 @@ const styles = {
         height: "30%",
         width: "40%",
         color: "white",
-        backgroundColor: "red !important"
+        backgroundColor: "red !important",
+        borderRadius: "5px"
     },
     closeBtn: {
         color: 'white',
@@ -160,6 +170,10 @@ class ContactModal extends React.Component {
                     <div className={classes.thumb}>
 
                         <form className={classes.form} onSubmit={this.handleSubmit} noValidate autoComplete="on">
+
+                            <div className={classes.titleDiv}>
+                                <h4>CONTACT ME</h4>
+                            </div>
 
                             <div className={classes.inputsDiv}>
 

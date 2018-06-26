@@ -108,5 +108,11 @@
         transform: scale(1.2);
       }
     }
+    .hoverable {
+      background-color: $primaryColor !important;
+    }
+    .disabled {
+      cursor: not-allowed;
+    }
   }
 }

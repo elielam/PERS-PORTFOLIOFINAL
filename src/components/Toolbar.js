@@ -24,7 +24,8 @@ class Toolbar extends Component {
 
                     {/* LINK */}
 
-                    <a className="link" onClick={handleBtnLoginModalOpen}>
+                    {/* <a className="link hoverable disabled" onClick={handleBtnLoginModalOpen}> */}
+                    <a className="link hoverable disabled">
                         <i className="fas fa-user fa-2x"/>
                     </a>
                 </div>
