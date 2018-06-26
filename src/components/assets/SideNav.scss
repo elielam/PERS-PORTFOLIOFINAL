@@ -207,18 +207,38 @@
         }
         .one{
           background-color: $primaryColorDarkestOpacity;
+
+          &:hover {
+            background-color: $primaryColorLightestOpacity !important;
+          }
         }
         .two{
           background-color: $primaryColorDarkerOpacity;
+
+          &:hover {
+            background-color: $primaryColorLighterOpacity !important;
+          }
         }
         .three{
           background-color: $primaryColorOpacity;
+
+          &:hover {
+            background-color: $primaryColorOpacity !important;
+          }
         }
         .four{
           background-color: $primaryColorLighterOpacity;
+
+          &:hover {
+            background-color: $primaryColorDarkerOpacity !important;
+          }
         }
         .five{
           background-color: $primaryColorLightestOpacity;
+
+          &:hover {
+            background-color: $primaryColorDarkestOpacity !important;
+          }
         }
       }
     }
